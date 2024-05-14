@@ -6,6 +6,9 @@ import {
 } from 'react-router-dom'
 import Layout from './layout/Layout'
 import HomeScreen from './screens/HomeScreen'
+import RegisterScreen from './screens/RegisterScreen'
+import CompanySignUp from './screens/CompanySignUp'
+import Address from './screens/Address'
 const App = () => {
   const routes = [
     <Route
@@ -14,6 +17,24 @@ const App = () => {
         <Layout>
           <HomeScreen />
         </Layout>
+      }
+    />,
+    <Route
+      path="/register"
+      element={
+        <RegisterScreen />
+      }
+    />,
+    <Route
+      path="/register/company"
+      element={
+        <CompanySignUp />
+      }
+    />,
+    <Route
+      path="/address"
+      element={
+        <Address />
       }
     />,
   ]
