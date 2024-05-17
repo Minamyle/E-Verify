@@ -1,5 +1,3 @@
-import React from "react";
-
 const Button = (props: { children: any; className: string }) => {
   const { children, className } = props;
 

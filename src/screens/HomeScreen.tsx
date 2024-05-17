@@ -1,6 +1,5 @@
-import { Children } from "react";
 import Button from "../components/Button";
-import RegisterationCard from "../components/RegisterationCard";
+
 import videoImage from "../../public/svg/videoImage.svg";
 import hero3 from "../../public/svg/vector3.svg";
 import guyImage from "../../public/svg/guyImage.svg";
