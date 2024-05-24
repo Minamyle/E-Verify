@@ -1,8 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "./Button";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleSubmit = () => {
+    navigate("/register/company");
+  };
   return (
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md py-4 z-10">
       <div className="">
@@ -18,7 +21,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to="/verify"
+            to="/verifyPage"
             className="no-underline text-black hover:text-gray-700"
           >
             Verify
@@ -42,8 +45,11 @@ const Navbar = () => {
             FAQ
           </Link>
           <div>
-            <Button className="p-2 rounded-2xl bg-[#FB4F4F] text-white whitespace-nowrap">
-              Sign in
+            <Button
+              className="p-2 rounded-2xl bg-[#FB4F4F] text-white whitespace-nowrap"
+              onClick={handleSubmit}
+            >
+              sign in
             </Button>
           </div>
         </div>
