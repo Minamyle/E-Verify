@@ -13,15 +13,15 @@ const Footer = () => {
             <FaWhatsapp />
           </div>
         </div>
-        <div className="text-white flex flex-col justify-end items-end">
-          <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+        <div className=" flex flex-col justify-end items-end">
+          <h1 className="text-white">SUBSCRIBE TO OUR NEWSLETTER</h1>
 
           <div className="flex bg-white p-1  max-w-[25rem] border">
             <input
               className="min-w-[17.5rem] px-2"
               placeholder="Enter your email"
             />
-            <button className="bg-red-500 px-4">Send</button>
+            <button className="bg-red-500 px-4 text-white">Send</button>
           </div>
         </div>
       </div>
