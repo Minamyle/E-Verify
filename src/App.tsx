@@ -13,6 +13,7 @@ import VerifyPage from "./screens/VerifyPage";
 import AboutUs from "./screens/AboutUs";
 import Contact from "./screens/Contact";
 import FAQ from "./screens/FAQ";
+import CompanyInfo from "./screens/CompanyInfo";
 const App = () => {
   const routes = [
     <Route
@@ -26,10 +27,6 @@ const App = () => {
     <Route path="/register" element={<RegisterScreen />} />,
     <Route path="/register/company" element={<CompanySignUp />} />,
     <Route path="/address" element={<Address />} />,
-    <Route path="/VerifyPage" element={<VerifyPage />} />,
-    <Route path="/about-us" element={<AboutUs />} />,
-    <Route path="/contact" element={<Contact />} />,
-    <Route path="/faq" element={<FAQ />} />,
   ];
   const router = createBrowserRouter(createRoutesFromElements(routes));
   return (
