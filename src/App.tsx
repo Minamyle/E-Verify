@@ -27,6 +27,11 @@ const App = () => {
     <Route path="/register" element={<RegisterScreen />} />,
     <Route path="/register/company" element={<CompanySignUp />} />,
     <Route path="/address" element={<Address />} />,
+    <Route path="/verifypage" element={<VerifyPage />} />,
+    <Route path="/about-us" element={<AboutUs />} />,
+    <Route path="/contact" element={<Contact />} />,
+    <Route path="/fag" element={<FAQ />} />,
+    <Route path="/companyinfo" element={<CompanyInfo />} />,
   ];
   const router = createBrowserRouter(createRoutesFromElements(routes));
   return (
