@@ -9,6 +9,7 @@ import HomeScreen from './screens/HomeScreen'
 import RegisterScreen from './screens/RegisterScreen'
 import CompanySignUp from './screens/CompanySignUp'
 import Address from './screens/Address'
+import CompanyInfo from './screens/CompanyInfo'
 const App = () => {
   const routes = [
     <Route
@@ -29,6 +30,14 @@ const App = () => {
       path="/register/company"
       element={
         <CompanySignUp />
+      }
+    />,
+    <Route
+      path="/company-info"
+      element={
+        <Layout>
+          <CompanyInfo />
+        </Layout>
       }
     />,
     <Route
