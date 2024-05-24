@@ -1,5 +1,3 @@
-import React from "react";
-
 const CompanyInfo = () => {
   return (
     <div className="px-[5%] pb-32 nunito pt-24">
