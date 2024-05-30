@@ -14,6 +14,7 @@ import AboutUs from "./screens/AboutUs";
 import Contact from "./screens/Contact";
 import FAQ from "./screens/FAQ";
 import CompanyInfo from "./screens/CompanyInfo";
+import Verification from "./screens/Verification";
 const App = () => {
   const routes = [
     <Route
@@ -32,6 +33,9 @@ const App = () => {
     <Route path="/contact" element={<Contact />} />,
     <Route path="/fag" element={<FAQ />} />,
     <Route path="/companyinfo" element={<CompanyInfo />} />,
+    <Route path="/verification" element={<Layout>
+      <Verification />
+    </Layout>} />,
   ];
   const router = createBrowserRouter(createRoutesFromElements(routes));
   return (

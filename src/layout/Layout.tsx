@@ -3,10 +3,10 @@ import Navbar from "../components/Navbar"
 
 const Layout = ({children}: any) => {
   return (
-    <div>
+    <div className="w-[100vw] overflow-x-hidden">
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }
