@@ -7,7 +7,7 @@ const Navbar = () => {
     navigate("/register/company");
   };
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white shadow-md py-4 z-10">
+    <nav className="fixed top-0 left-0 w-full bg-white font-mono py-4 z-10">
       <div className="">
         <div className="flex space-x-5 justify-around">
           <div className="text-xl font-bold">
@@ -46,7 +46,7 @@ const Navbar = () => {
           </Link>
           <div>
             <Button
-              className="p-2 rounded-2xl bg-[#FB4F4F] text-white whitespace-nowrap"
+              className="p-2 px-8 rounded-2xl bg-[#FB4F4F] text-white whitespace-nowrap"
               onClick={handleSubmit}
             >
               sign in
