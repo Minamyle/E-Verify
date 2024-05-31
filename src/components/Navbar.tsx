@@ -21,7 +21,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to="/verifyPage"
+            to="/verification"
             className="no-underline text-black hover:text-gray-700"
           >
             Verify
