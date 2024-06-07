@@ -15,6 +15,7 @@ import Contact from "./screens/Contact";
 import FAQ from "./screens/FAQ";
 import CompanyInfo from "./screens/CompanyInfo";
 import Verification from "./screens/Verification";
+import WorkExperience from "./screens/WorkExperience";
 const App = () => {
   const routes = [
     <Route
@@ -35,6 +36,9 @@ const App = () => {
     <Route path="/companyinfo" element={<CompanyInfo />} />,
     <Route path="/verification" element={<Layout>
       <Verification />
+    </Layout>} />,
+    <Route path="/work-experience" element={<Layout>
+      <WorkExperience />
     </Layout>} />,
   ];
   const router = createBrowserRouter(createRoutesFromElements(routes));

@@ -7,9 +7,9 @@ const Navbar = () => {
     navigate("/register/company");
   };
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white font-mono py-4 z-50">
-      <div className="">
-        <div className="flex space-x-5 justify-around">
+    <nav className="fixed  top-0 left-0 w-full bg-white font-mono py-4 z-50">
+      <div className="max-w-[90rem] mx-auto">
+        <div className="flex space-x-5 justify-between">
           <div className="text-xl font-bold">
             <Link to="/" className="no-underline text-black">
               Logo
