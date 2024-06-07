@@ -22,6 +22,7 @@ import gaurantor from "../../public/svg/gaurantor.svg";
 import blue1 from "../../public/svg/blue.svg";
 import yellow1 from "../../public/svg/yellow.svg";
 import red1 from "../../public/svg/red2.svg";
+import { Link } from "react-router-dom";
 
 // const HomeScreen = () => {
 //   return (
@@ -310,9 +311,12 @@ const HomeScreen = () => {
           eligible positions for jobs in Nigeria.
         </p>
         <div className="mt-6 flex gap-8">
-          <button className="bg-blue-800 text-white px-8 py-3 rounded-full">
+          <Link to='/work-experience'>
+            <button className="bg-blue-800 text-white px-8 py-3 rounded-full">
             Background Check
           </button>
+          </Link>
+          
           <button className="bg-red-500 text-white px-8 py-3 rounded-full">
             Professional Check
           </button>
