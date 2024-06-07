@@ -1,3 +1,4 @@
+
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import { IoMdNotifications } from "react-icons/io";
@@ -18,7 +19,7 @@ const Layout = ({children}: any) => {
         {children}
         <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
