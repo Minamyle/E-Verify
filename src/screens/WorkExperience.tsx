@@ -1,19 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const steps = [
-  "Personal detail",
-  "Addressing",
-  "Education",
-  "Bank details",
-  "Medical",
-  "Certification",
-  "ID Check",
-  "Guarantor",
-  "Work reference",
-  "Police Check Up",
-  "Taxation TIN",
-  "E-certify",
-];
 
 const Layout = ({
   children,
