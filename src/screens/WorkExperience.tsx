@@ -28,7 +28,7 @@ const Layout = ({
   );
 };
 const WorkExperience = () => {
-  const [tab, setTab] = useState("fom");
+  const [tab, setTab] = useState("form");
   return (
     <div className="max-w-[90rem] nunito py-0 pb-16 mx-auto">
       <div className="mt-20">
