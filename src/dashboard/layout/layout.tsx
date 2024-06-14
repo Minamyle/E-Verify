@@ -3,9 +3,8 @@ import Sidebar from "./sidebar";
 
 const AdminLayout = ({ children }: { children: any }) => {
   return (
-    <div className="flex max-w-[100vw]">
+    <div className="flex bg-white w-[100vw] overflow-x-hidden">
       <Sidebar />
-      <div className="w-56"></div>
       {children}
     </div>
   );

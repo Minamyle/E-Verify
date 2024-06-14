@@ -27,7 +27,7 @@ const tabs = [
 ];
 const Home = () => {
   return (
-    <div className="flex-1 bg-blue-100 nunito p-[2rem] px-[2rem]">
+    <div className="w-[100%] pl-[264px] bg-blue-100 nunito p-[2rem] px-[2rem]">
       <div className="flex justify-between items-center">
         <h1 className="text-4xl font-bold">Overview</h1>
 
