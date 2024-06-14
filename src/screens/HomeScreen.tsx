@@ -316,10 +316,11 @@ const HomeScreen = () => {
             Background Check
           </button>
           </Link>
-          
+          <Link to='/dashboard'>
           <button className="bg-red-500 text-white px-8 py-3 rounded-full">
             Professional Check
           </button>
+          </Link>
         </div>
         {/* <div className="w-6/12 relative flex z-10 flex-col items-center justify-center h-[100vh] "> */}
         <img

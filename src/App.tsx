@@ -16,6 +16,8 @@ import FAQ from "./screens/FAQ";
 import CompanyInfo from "./screens/CompanyInfo";
 import Verification from "./screens/Verification";
 import WorkExperience from "./screens/WorkExperience";
+import AdminLayout from "./dashboard/layout/layout";
+import Home from "./screens/dashboard/Home";
 const App = () => {
   const routes = [
     <Route
@@ -24,6 +26,14 @@ const App = () => {
         <Layout>
           <HomeScreen />
         </Layout>
+      }
+    />,
+    <Route
+      path="/dashboard"
+      element={
+        <AdminLayout>
+          <Home />
+        </AdminLayout>
       }
     />,
     <Route path="/register" element={<RegisterScreen />} />,
