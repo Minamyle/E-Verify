@@ -1,7 +1,5 @@
-import { useState } from "react";
 import RegisterationCard from "../components/RegisterationCard";
 const WorkExp = () => {
-  const [tab, setTab] = useState("WorkExp");
   return (
     <div className="w-[100vw] h-[100vh] pl-[7.5%] flex flex-row items-center nunito justify-center max-w-[100vw] overflow-x-hidden ">
       <RegisterationCard>
