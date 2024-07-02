@@ -25,7 +25,7 @@ const Sidebar = () => {
     },
   ];
 
-  const [showMenu, setShowMenu] = useState(true)
+  const [showMenu] = useState(true)
   return (
     <div className={`h-[100vh] inter bg-red-500 fixed left-0 top-0 ${showMenu ? 'w-56 px-4' : 'w-16 px-1'} inter flex flex-col justify-between py-12  text-white`}>
       <div className={`flex gap-3 items-center ${!showMenu && 'justify-center'}`}>
