@@ -29,7 +29,7 @@ const Layout = ({
 
 const WorkerInfo = () => {
   return (
-    <div className="max-w-[90rem] mt-20 nunito py-0 pb-16 mx-auto">
+    <div className="max-w-[90rem] mt-20 inter py-0 pb-16 mx-auto">
       <Layout className="p-[2rem] grid grid-cols-2 gap-[2rem]">
         <div className="flex flex-col relative w-[100%] ">
           <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">

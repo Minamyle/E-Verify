@@ -7,9 +7,9 @@ import { useState } from "react";
 const Layout = ({children}: any) => {
   const [showNotification, setShowNotification] = useState(false)
   return (
-    <div className="w-[100vw] overflow-x-hidden">
+    <div className="max-w-[100vw] inter  overflow-x-hidden">
         <Navbar />
-        <div className="mt-20 flex justify-end max-w-[90rem] relative mx-auto items-end">
+        <div className="flex justify-end max-w-[90rem] relative mx-auto items-end">
           <IoMdNotifications className="text-2xl text-gray-500 cursor-pointer" onClick={() => setShowNotification(!showNotification)}/>
 
          {

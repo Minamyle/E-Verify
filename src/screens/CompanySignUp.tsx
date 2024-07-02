@@ -4,9 +4,9 @@ import { FaTwitter } from "react-icons/fa";
 import { RiGoogleLine } from "react-icons/ri";
 const CompanySignUp = () => {
   return (
-    <div className="w-[100vw] h-[100vh] pl-[7.5%] flex flex-row items-center nunito justify-center max-w-[100vw] overflow-x-hidden">
+    <div className="w-[100vw] h-[100vh] px-[1rem] lg:px-0 lg:pl-[7.5%] flex flex-row items-center inter justify-center max-w-[100vw] overflow-x-hidden">
       <RegisterationCard>
-        <div className="w-6/12 px-12 z-10 flex flex-col justify-center items-start h-[100vh]">
+        <div className="w-[100%] lg:w-6/12 lg:px-12 z-10 flex flex-col justify-center items-start h-[100vh]">
           <div className="flex items-center gap-12">
             <img
               src="https://cdn-icons-png.flaticon.com/128/149/149071.png"

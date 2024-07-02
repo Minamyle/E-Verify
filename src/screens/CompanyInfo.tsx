@@ -1,6 +1,6 @@
 const CompanyInfo = () => {
   return (
-    <div className="px-[5%] pb-32 nunito pt-24">
+    <div className="px-[5%] pb-32 inter pt-24">
       <div className="flex justify-between gap-16">
         <div className="w-8/12 h-[30rem] flex gap-10">
           {/* <div> */}

@@ -18,6 +18,8 @@ import Verification from "./screens/Verification";
 import WorkExperience from "./screens/WorkExperience";
 import AdminLayout from "./dashboard/layout/layout";
 import Home from "./screens/dashboard/Home";
+import WorkerInfo from "./screens/worker-info";
+import WorkerSearch from "./screens/worker/worker-search";
 const App = () => {
   const routes = [
     <Route
@@ -39,7 +41,12 @@ const App = () => {
     <Route path="/register" element={<RegisterScreen />} />,
     <Route path="/register/company" element={<CompanySignUp />} />,
     <Route path="/address" element={<Address />} />,
-    <Route path="/verifypage" element={<VerifyPage />} />,
+    <Route path="/worker-verification" element={<Layout>
+      <Verification />
+    </Layout>} />,
+    <Route path="/worker-search" element={<Layout>
+      <WorkerSearch />
+    </Layout>} />,
     <Route path="/about-us" element={<AboutUs />} />,
     <Route path="/contact" element={<Contact />} />,
     <Route path="/fag" element={<FAQ />} />,
@@ -50,6 +57,9 @@ const App = () => {
     <Route path="/work-experience" element={<Layout>
       <WorkExperience />
     </Layout>} />,
+    <Route path="/worker-info" element={<Layout>
+      <WorkerInfo />
+    </Layout> } />
   ];
   const router = createBrowserRouter(createRoutesFromElements(routes));
   return (

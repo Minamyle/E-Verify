@@ -497,7 +497,7 @@ const Verification = () => {
         );
       case 7:
         return (
-          <div className="flex flex-col nunito gap-4 justify-end items-end">
+          <div className="flex flex-col inter gap-4 justify-end items-end">
             {/* <div className='w-[100%]'>
                             
                             </div> */}
@@ -746,7 +746,7 @@ const Verification = () => {
   };
 
   return (
-    <div className="max-w-[90rem] nunito py-20 mx-auto">
+    <div className="max-w-[90rem] inter py-20 mx-auto inter">
       <div className="flex flex-col justify-center mt-10 items-center">
         <h1 className="text-4xl font-[500]">James Johnson</h1>
         <p className="text-xl text-gray-500">48648-9743by34-43r4n4</p>

@@ -55,7 +55,7 @@ const NotificationCard = () => {
     },
   ]
   return (
-    <div className="absolute nunito z-10 bg-white shadow-md top-10 right-0 w-[25rem] border">
+    <div className="absolute inter z-10 bg-white shadow-md top-10 right-0 w-[25rem] border">
       <h1 className="relative pl-6 py-4 text-xl w-fit">
         Notification{" "}
         <div className="w-3 absolute top-4 rounded-full -right-4 h-3 bg-red-400"></div>

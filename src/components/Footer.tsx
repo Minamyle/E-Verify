@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="bg-red-500 px-[5%] munito py-20 flex flex-col gap-12">
-      <div className="flex justify-between">
+      <div className="flex flex-col lg:flex-row justify-between">
         <div>
           <h1 className="text-white text-2xl font-[500]">Logo</h1>
           <div className="text-white flex flex-row gap-5 mt-4">

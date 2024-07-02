@@ -30,7 +30,7 @@ const Layout = ({
 const WorkExperience = () => {
   const [tab, setTab] = useState("form");
   return (
-    <div className="max-w-[90rem] nunito py-0 pb-16 mx-auto">
+    <div className="max-w-[90rem] inter py-0 pb-16 mx-auto">
       <div className="mt-20">
         <div className="flex flex-col gap-4 justify-end items-end">
           <h1>Work Experience &gt; (Company Name) </h1>
