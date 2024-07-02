@@ -23,8 +23,8 @@ const Layout = ({
   className: string;
 }) => {
   return (
-    <div className="flex w-[100%] justify-between">
-      <div className="border border-slate-700 rounded-xl w-3/12 h-[30rem] overflow-hidden flex flex-col justify-evenly items-center">
+    <div className="flex w-[100%] flex-col gap-12 lg:flex-row justify-between">
+      <div className="border border-slate-700 rounded-xl lg:w-3/12 h-[30rem] overflow-hidden flex flex-col justify-evenly items-center">
         <h1 className="font-[600]">Identification Verification Photo</h1>
         <img
           src="https://guardian.ng/wp-content/uploads/2023/05/bigstock-1619644371.jpg"
@@ -34,7 +34,7 @@ const Layout = ({
       </div>
 
       <div
-        className={`w-8/12 h-[30rem] border border-slate-700 rounded-xl ${className}`}
+        className={`w-[100%] lg:w-8/12 lg:h-[30rem] border border-slate-700 rounded-xl ${className}`}
       >
         {children}
       </div>
@@ -58,7 +58,7 @@ const Verification = () => {
       case 0:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] grid grid-cols-2 gap-[2rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] grid grid-cols-1 lg:grid-cols-2 gap-[2rem]">
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Name
@@ -144,8 +144,8 @@ const Verification = () => {
       case 1:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] py-[4rem] flex flex-col gap-[1rem]">
-              <div className="flex gap-[1rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] py-[2rem] lg:py-[4rem] flex flex-col gap-[1rem]">
+              <div className="flex flex-col lg:flex-row gap-[1rem]">
                 <div className="border-2 rounded-xl border-green-300 p-4">
                   <h1 className="text-[14px] text-green-600">Address 1</h1>
                   <p className="mt-6">
@@ -190,7 +190,7 @@ const Verification = () => {
       case 2:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] border-red-600 grid grid-cols-2 gap-[2rem] gap-y-1">
+            <Layout className="p-[1rem] lg:p-[2rem] border-red-600 grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[1rem]">
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   School
@@ -237,13 +237,13 @@ const Verification = () => {
                 />
               </div>
               <div></div>
-              <div className="flex gap-3">
+              <div className="flex flex-col lg:flex-row gap-6 lg:gap-3">
                 <div className="flex gap-3 items-center h-fit">
                   <span className=" bg-white left-6 text-[14px] px-2">
                     Start Year
                   </span>
                   <input
-                    className="border bg-white w-28 border-slate-500 rounded-xl text-md px-2 h-10 py-2"
+                    className="border bg-white flex-1 lg:w-28 border-slate-500 rounded-xl text-md px-2 h-10 py-2"
                     placeholder=""
                   />
                 </div>
@@ -253,7 +253,7 @@ const Verification = () => {
                     Finish Year
                   </span>
                   <input
-                    className="border bg-white w-28 border-slate-500 rounded-xl text-md px-2 h-10 py-2"
+                    className="border bg-white flex-1 lg:w-28 border-slate-500 rounded-xl text-md px-2 h-10 py-2"
                     placeholder=""
                   />
                 </div>
@@ -276,7 +276,7 @@ const Verification = () => {
       case 3:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] h-fit border-red-600 grid grid-cols-2 gap-[2rem] gap-y-[4rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] h-fit border-red-600 grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gapy-[2rem] lg:gap-y-[4rem]">
               <div className="flex flex-col relative w-[100%]">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Bank
@@ -286,7 +286,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Account no
@@ -296,7 +296,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Account Name
@@ -319,7 +319,7 @@ const Verification = () => {
       case 4:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] h-fit grid grid-cols-2 gap-[2rem] gap-y-[4rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[2rem] lg:gap-y-[4rem]">
               <div className="flex flex-col relative w-[100%]">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Known Meedical Conditions
@@ -366,7 +366,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Previous Surgeries
@@ -376,7 +376,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Physician's Notes
@@ -386,7 +386,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
             </Layout>
             <button
               type="button"
@@ -400,7 +400,7 @@ const Verification = () => {
       case 5:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] h-fit grid grid-cols-2 gap-[2rem] gap-y-[4rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[2rem] lg:gap-y-[4rem]">
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Certificate
@@ -410,7 +410,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Issuer
@@ -420,7 +420,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Year's Issued
@@ -430,7 +430,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
             </Layout>
             <button
               type="button"
@@ -444,7 +444,7 @@ const Verification = () => {
       case 6:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] h-fit grid grid-cols-2 gap-[2rem] gap-y-[3rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[2rem] lg:gap-y-[3rem]">
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   ID Card
@@ -454,7 +454,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Card Name
@@ -464,7 +464,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   ID num
@@ -474,7 +474,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Year Issued
@@ -484,7 +484,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
-              <div></div>
+              <div className="hidden lg:flex"></div>
             </Layout>
             <button
               type="button"
@@ -497,13 +497,13 @@ const Verification = () => {
         );
       case 7:
         return (
-          <div className="flex flex-col nunito gap-4 justify-end items-end">
+          <div className="flex flex-col inter gap-4 justify-end items-end">
             {/* <div className='w-[100%]'>
                             
                             </div> */}
-            <Layout className="p-[2rem] border-red-500 h-fit ">
+            <Layout className="p-[1rem] lg:p-[2rem] border-red-500 h-fit ">
               <h1 className="text-start mb-4">Gurantor 1</h1>
-              <div className="grid grid-cols-2 gap-[2rem] gap-y-[3rem]">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-[2rem] lg:gap-y-[3rem]">
                 <div className="flex flex-col relative w-[100%] ">
                   <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                     Name
@@ -556,7 +556,7 @@ const Verification = () => {
       case 8:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] border-green-300 h-fit grid grid-cols-2 gap-[2rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] border-green-300 h-fit flex flex-col lg:grid grid-cols-2 gap-[2rem]">
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   School
@@ -566,6 +566,7 @@ const Verification = () => {
                   placeholder=""
                 />
               </div>
+              
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   State
@@ -641,7 +642,7 @@ const Verification = () => {
       case 9:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] border-red-300 h-fit grid grid-cols-1 gap-[2rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] border-red-300 h-fit grid grid-cols-1 gap-[2rem]">
               <div className="flex flex-col relative w-[100%]">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Police Report of Conviction
@@ -692,7 +693,7 @@ const Verification = () => {
       case 10:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[2rem] border-red-300 h-fit grid grid-cols-1 gap-[2rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] border-red-300 h-fit grid grid-cols-1 gap-[2rem]">
               <div className="flex flex-col relative w-[100%]">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Date of Payment
@@ -746,7 +747,7 @@ const Verification = () => {
   };
 
   return (
-    <div className="max-w-[90rem] nunito py-20 mx-auto">
+    <div className="max-w-[90rem] px-[1rem] inter py-1 lg:py-20 mx-auto inter">
       <div className="flex flex-col justify-center mt-10 items-center">
         <h1 className="text-4xl font-[500]">James Johnson</h1>
         <p className="text-xl text-gray-500">48648-9743by34-43r4n4</p>

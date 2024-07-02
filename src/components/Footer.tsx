@@ -1,10 +1,11 @@
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import {Link} from "react-router-dom"
 const Footer = () => {
   return (
     <div className="bg-red-500 px-[5%] munito py-20 flex flex-col gap-12">
-      <div className="flex justify-between">
+      <div className="flex flex-col lg:flex-row justify-between">
         <div>
           <h1 className="text-white text-2xl font-[500]">Logo</h1>
           <div className="text-white flex flex-row gap-5 mt-4">
@@ -28,13 +29,24 @@ const Footer = () => {
       <div className="grid text-gray-300 grid-cols-1 md:grid-col-2 lg:grid-cols-4">
         <div>
           <ul>
-            <li>Corporate Info</li>
-            <li>Accessibility</li>
-            <li>Jobs</li>
-            <li>Ad Choices</li>
-            <li>Privacy Policy</li>
-            <li>CA Note</li>
-            <li>Terms of Service - NEW</li>
+            <li>Company</li>
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
+            <li><Link to="/address">Jobs</Link></li>
+            
+
+            <li><Link to="/worker-verification">Worker Verification</Link></li>
+            
+
+            <li><Link to="/worker-search">Worker Search</Link></li>
+            
+
+            <li><Link to="/companyinfo">Company Info</Link></li>
+            
+
+            <li> <Link to="/work-experience">Work Experience</Link></li>
+           
           </ul>
         </div>
         <div>

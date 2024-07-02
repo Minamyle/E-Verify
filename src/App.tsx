@@ -9,7 +9,6 @@ import HomeScreen from "./screens/HomeScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import CompanySignUp from "./screens/CompanySignUp";
 import Address from "./screens/Address";
-import VerifyPage from "./screens/VerifyPage";
 import AboutUs from "./screens/AboutUs";
 import Contact from "./screens/Contact";
 import FAQ from "./screens/FAQ";
@@ -18,6 +17,7 @@ import Verification from "./screens/Verification";
 import WorkExperience from "./screens/WorkExperience";
 import AdminLayout from "./dashboard/layout/layout";
 import Home from "./screens/dashboard/Home";
+import WorkerSearch from "./screens/worker/worker-search";
 import CompanyPostJobafterInterview from "./screens/CompanyPostJobafterInterview";
 import WorkerSignIn from "./screens/WorkerSignIn";
 import CompanySignIn from "./screens/CompanySignIn";
@@ -44,10 +44,15 @@ const App = () => {
     <Route path="/register" element={<RegisterScreen />} />,
     <Route path="/register/company" element={<CompanySignUp />} />,
     <Route path="/address" element={<Address />} />,
-    <Route path="/verifypage" element={<VerifyPage />} />,
+    <Route path="/worker-verification" element={<Layout>
+      <Verification />
+    </Layout>} />,
+    <Route path="/worker-search" element={<Layout>
+      <WorkerSearch />
+    </Layout>} />,
     <Route path="/about-us" element={<AboutUs />} />,
     <Route path="/contact" element={<Contact />} />,
-    <Route path="/fag" element={<FAQ />} />,
+    <Route path="/faq" element={<FAQ />} />,
     <Route
       path="/CompanyPostJobafterInterview"
       element={<CompanyPostJobafterInterview />}
@@ -57,15 +62,27 @@ const App = () => {
     <Route path="/WorkExp" element={<WorkExp />} />,
     <Route path="/CompanySignIn" element={<CompanySignIn />} />,
 
-    <Route path="/companyinfo" element={<CompanyInfo />} />,
-    <Route
-      path="/verification"
-      element={
-        <Layout>
-          <Verification />
-        </Layout>
-      }
-    />,
+    <Route path="/companyinfo" element={
+      <Layout>
+    <CompanyInfo />
+    </Layout>} />,
+    <Route path="/verification" element={<Layout>
+      <Verification />
+    </Layout>} />,
+    <Route path="/work-experience" element={<Layout>
+      <WorkExperience />
+    </Layout>} />,
+    // <Route path="/worker-info" element={<Layout>
+    //   <WorkerInfo />
+    // </Layout> } />
+    // <Route
+    //   path="/verification"
+    //   element={
+    //     <Layout>
+    //       <Verification />
+    //     </Layout>
+    //   }
+    // />,
     <Route
       path="/work-experience"
       element={
