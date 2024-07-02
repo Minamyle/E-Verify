@@ -79,7 +79,7 @@ const Home = () => {
         <div className="lg:w-4/12 h-[30rem] lg:h-fit bg-white rounded-xl flex flex-col justify-between px-6">
           <PieChartComponent />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 gap-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 py-8 gap-12 gap-y-8">
             <div className="flex items-center gap-4">
               <div
                 className={`bg-green-400 text-white h-fit px-2 text-xl lg:text-2xl rounded-full py-2`}

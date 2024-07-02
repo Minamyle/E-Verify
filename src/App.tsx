@@ -20,6 +20,11 @@ import AdminLayout from "./dashboard/layout/layout";
 import Home from "./screens/dashboard/Home";
 import WorkerInfo from "./screens/worker-info";
 import WorkerSearch from "./screens/worker/worker-search";
+import CompanyPostJobafterInterview from "./screens/CompanyPostJobafterInterview";
+import WorkerSignIn from "./screens/WorkerSignIn";
+import CompanySignIn from "./screens/CompanySignIn";
+import WorkerSignUp from "./screens/WorkerSignUp";
+import WorkExp from "./screens/WorkExp";
 const App = () => {
   const routes = [
     <Route
@@ -49,17 +54,45 @@ const App = () => {
     </Layout>} />,
     <Route path="/about-us" element={<AboutUs />} />,
     <Route path="/contact" element={<Contact />} />,
-    <Route path="/fag" element={<FAQ />} />,
-    <Route path="/companyinfo" element={<CompanyInfo />} />,
+    <Route path="/faq" element={<FAQ />} />,
+    <Route
+      path="/CompanyPostJobafterInterview"
+      element={<CompanyPostJobafterInterview />}
+    />,
+    <Route path="/WorkerSignIn" element={<WorkerSignIn />} />,
+    <Route path="/WorkerSignUp" element={<WorkerSignUp />} />,
+    <Route path="/WorkExp" element={<WorkExp />} />,
+    <Route path="/CompanySignIn" element={<CompanySignIn />} />,
+
+    <Route path="/companyinfo" element={
+      <Layout>
+    <CompanyInfo />
+    </Layout>} />,
     <Route path="/verification" element={<Layout>
       <Verification />
     </Layout>} />,
     <Route path="/work-experience" element={<Layout>
       <WorkExperience />
     </Layout>} />,
-    <Route path="/worker-info" element={<Layout>
-      <WorkerInfo />
-    </Layout> } />
+    // <Route path="/worker-info" element={<Layout>
+    //   <WorkerInfo />
+    // </Layout> } />
+    // <Route
+    //   path="/verification"
+    //   element={
+    //     <Layout>
+    //       <Verification />
+    //     </Layout>
+    //   }
+    // />,
+    <Route
+      path="/work-experience"
+      element={
+        <Layout>
+          <WorkExperience />
+        </Layout>
+      }
+    />,
   ];
   const router = createBrowserRouter(createRoutesFromElements(routes));
   return (

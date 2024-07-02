@@ -7,7 +7,7 @@ const Address = () => {
             <RegisterationCard>
                 {
                     tab == "address" ?
-                        <div className="lg:w-6/12 border border-black w-[100%] px-12 z-10 flex flex-col gap-6 justify-center items-start h-[100vh]">
+                        <div className="lg:w-6/12 w-[100%] px-12 z-10 flex flex-col gap-6 justify-center items-start h-[100vh]">
                             <h1 className='text-2xl'>Address</h1>
                             <div className='flex flex-col w-[100%]'>
                                 <span className="text-[12px] lg:text-[15px]">Address</span>

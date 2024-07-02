@@ -2,13 +2,13 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 // import logo from "../assets/logo.png";
-
+import { Link } from "react-router-dom";
 const navItems = [
-    { label: "Home", href: "#" },
-    { label: "Verify", href: "#" },
-    { label: "About ua", href: "#" },
-    { label: "Contact", href: "#" },
-    { label: "FAQ", href: "#" },
+    { label: "Home", href: "/" },
+    { label: "Verify", href: "/verify" },
+    { label: "About us", href: "/about-us" },
+    { label: "Contact", href: "/contact-us" },
+    { label: "FAQ", href: "/faq" },
   ];
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href}>{item.label}</a>
+                <Link to={item.href}>{item.label}</Link>
               </li>
             ))}
           </ul>

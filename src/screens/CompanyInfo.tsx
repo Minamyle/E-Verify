@@ -1,23 +1,23 @@
 const CompanyInfo = () => {
   return (
-    <div className="px-[5%] pb-32 inter pt-24">
+    <div className="px-[5%] pb-32 inter pt-12 lg:pt-24">
       <div className="flex justify-between gap-16">
-        <div className="w-8/12 h-[30rem] flex gap-10">
+        <div className="w-8/12 border border-black h-[30rem] flex gap-10">
           {/* <div> */}
-          <div className="border w-[35%] flex flex-col justify-evenly items-center h-[100%]">
+          <div className="w-[35%] flex flex-col justify-evenly items-center h-[100%]">
             <h1 className="font-[500]">Company Verification Photo</h1>
             <img
               src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/company-logo-design-template-e089327a5c476ce5c70c74f7359c5898_screen.jpg?ts=1672291305"
               className="max-w-72"
             />
           </div>
-          <div className="border fw-fit min-w-[35rem] flex h-[100%] justify-evenly flex-col gap-6 px-12 py-4">
+          <div className="flex-1 w-fit min-w-[35rem] flex h-[100%] justify-evenly flex-col gap-6 px-6 py-4">
             <div className="flex flex-col relative w-[100%]">
               <span className="absolute bg-white left-6 text-[14px] px-2">
                 Company Name
               </span>
               <input
-                className="border bg-white mt-3 border-slate-500 rounded-xl text-md px-6 max-w-[30rem] py-2"
+                className="border bg-white mt-2 border-slate-500 rounded-xl text-md px-6 w-[100%] py-2"
                 placeholder=""
               />
             </div>
@@ -26,7 +26,7 @@ const CompanyInfo = () => {
                 Company email
               </span>
               <input
-                className="border bg-white mt-3 border-slate-500 rounded-xl text-md px-6 max-w-[30rem] py-2"
+                className="border bg-white mt-2 border-slate-500 rounded-xl text-md px-6 w-[100%] py-2"
                 placeholder=""
               />
             </div>
@@ -35,7 +35,7 @@ const CompanyInfo = () => {
                 Company Contact
               </span>
               <input
-                className="border bg-white mt-3 border-slate-500 rounded-xl text-md px-6 max-w-[30rem] py-2"
+                className="border bg-white mt-3 border-slate-500 rounded-xl text-md px-6 w-[100%] py-2"
                 placeholder=""
               />
             </div>
@@ -44,7 +44,7 @@ const CompanyInfo = () => {
                 Company Size
               </span>
               <input
-                className="border bg-white mt-3 border-slate-500 rounded-xl text-md px-6 max-w-[30rem] py-2"
+                className="border bg-white mt-3 border-slate-500 rounded-xl text-md px-6 w-[100%] py-2"
                 placeholder=""
               />
             </div>
