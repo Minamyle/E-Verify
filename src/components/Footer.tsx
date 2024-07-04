@@ -191,6 +191,20 @@ const Footer = () => {
         gurantor-otp
         </Link>
 
+
+
+        <Link to="/dashboard-comment">
+        dashboard-comment
+        </Link>
+
+        <Link to="/dashboard-log">
+        dashboard-log
+        </Link>
+
+        <Link to="/job-application">
+        /job-application
+        </Link>
+
         
       </div>
     </div>

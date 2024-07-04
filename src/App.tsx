@@ -34,6 +34,9 @@ import HistoryLog from "./screens/worker/history-log";
 import WorkerInfo from "./screens/worker-info";
 import RequestGurantorOtp from "./screens/worker/gurantor/request-gurantor-otp";
 import AddAddress from "./screens/worker/add-address";
+import JobApplication from "./screens/application/job-application";
+import Comment from "./screens/dashboard/comment";
+import DashboardLog from "./screens/dashboard/log";
 const App = () => {
   const routes = [
     <Route
@@ -49,6 +52,23 @@ const App = () => {
       element={
         <AdminLayout>
           <Home />
+        </AdminLayout>
+      }
+    />,
+    <Route
+      path="/dashboard-comment"
+      element={
+        <AdminLayout>
+          <Comment />
+        </AdminLayout>
+      }
+    />,
+
+    <Route
+      path="/dashboard-log"
+      element={
+        <AdminLayout>
+          <DashboardLog />
         </AdminLayout>
       }
     />,
@@ -71,8 +91,9 @@ const App = () => {
 <Route path="/add-experience" element={<Layout>
   <AddExperience />
 </Layout>} />,
-
-
+<Route path="/job-application" element={<Layout>
+  <JobApplication />
+</Layout>} />,
 
 <Route path="/add-experience-autofill" element={<Layout>
   <AddExperienceAutoFill />
