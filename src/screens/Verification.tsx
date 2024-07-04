@@ -24,7 +24,7 @@ const Layout = ({
 }) => {
   return (
     <div className="flex w-[100%] flex-col gap-12 lg:flex-row justify-between">
-      <div className="border border-slate-700 rounded-xl lg:w-3/12 h-[30rem] overflow-hidden flex flex-col justify-evenly items-center">
+      <div className="border border-slate-700 rounded-md lg:w-3/12 h-[30rem] overflow-hidden flex flex-col justify-evenly items-center">
         <h1 className="font-[600]">Identification Verification Photo</h1>
         <img
           src="https://guardian.ng/wp-content/uploads/2023/05/bigstock-1619644371.jpg"
@@ -34,7 +34,7 @@ const Layout = ({
       </div>
 
       <div
-        className={`w-[100%] lg:w-8/12 lg:h-[30rem] border border-slate-700 rounded-xl ${className}`}
+        className={`w-[100%] lg:w-8/12 border border-slate-700 rounded-md ${className}`}
       >
         {children}
       </div>
@@ -59,75 +59,75 @@ const Verification = () => {
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
             <Layout className="p-[1rem] lg:p-[2rem] grid grid-cols-1 lg:grid-cols-2 gap-[2rem]">
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                  Name
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Firstname
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
                   Surname
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                  email
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Email
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                  phone no
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Phone no
                 </span>
                 <input
-                  className="border  outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
                   Age
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
                   Race
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                  gender
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Gender
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
                   Disability
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -146,14 +146,14 @@ const Verification = () => {
           <div className="flex flex-col gap-4 justify-end items-end">
             <Layout className="p-[1rem] lg:p-[2rem] py-[2rem] lg:py-[4rem] flex flex-col gap-[1rem]">
               <div className="flex flex-col lg:flex-row gap-[1rem]">
-                <div className="border-2 rounded-xl border-green-300 p-4">
+                <div className="border-2 rounded-md border-green-300 p-4">
                   <h1 className="text-[14px] text-green-600">Address 1</h1>
                   <p className="mt-6">
                     15, Iyala street Akindedun, off shoprite, Alausa, Ikeja
                     Lagos Statee Nigeria
                   </p>
                 </div>
-                <div className="border-2 rounded-xl border-red-300 p-4">
+                <div className="border-2 rounded-md border-red-300 p-4">
                   <h1 className="text-[14px] text-red-600">Address 1</h1>
                   <p className="mt-6">
                     15, Iyala street Akindedun, off shoprite, Alausa, Ikeja
@@ -190,60 +190,60 @@ const Verification = () => {
       case 2:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[1rem] lg:p-[2rem] border-red-600 grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[1rem]">
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
+            <Layout className="p-[1rem] lg:p-[2rem] border-red-600 flex flex-col lg:grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[1rem]">
+            <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
                   School
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                  State
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Disability
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
                   Degree
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
                   Nation
                 </span>
                 <input
-                  className="border  outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div className="flex flex-col relative w-[100%] ">
-                <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
                   Course
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              <div></div>
-              <div className="flex flex-col lg:flex-row gap-6 lg:gap-3">
+              {/* <div></div> */}
+              <div className="flex col-span-2 flex-col lg:flex-row gap-6 lg:gap-3">
                 <div className="flex gap-3 items-center h-fit">
                   <span className=" bg-white left-6 text-[14px] px-2">
                     Start Year
                   </span>
                   <input
-                    className="border bg-white flex-1 lg:w-28 border-slate-500 rounded-xl text-md px-2 h-10 py-2"
+                    className="border bg-white flex-1 lg:w-28 border-gray-300 rounded-md text-md px-2 h-10 py-2"
                     placeholder=""
                   />
                 </div>
@@ -253,7 +253,7 @@ const Verification = () => {
                     Finish Year
                   </span>
                   <input
-                    className="border bg-white flex-1 lg:w-28 border-slate-500 rounded-xl text-md px-2 h-10 py-2"
+                    className="border bg-white flex-1 lg:w-28 border-gray-300 rounded-md text-md px-2 h-10 py-2"
                     placeholder=""
                   />
                 </div>
@@ -276,13 +276,13 @@ const Verification = () => {
       case 3:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[1rem] lg:p-[2rem] h-fit border-red-600 grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gapy-[2rem] lg:gap-y-[4rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] h-fit border-red-600 grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gapy-[2rem] lg:gap-y-[2rem]">
               <div className="flex flex-col relative w-[100%]">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Bank
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -292,7 +292,7 @@ const Verification = () => {
                   Account no
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -302,7 +302,7 @@ const Verification = () => {
                   Account Name
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -319,13 +319,13 @@ const Verification = () => {
       case 4:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[2rem] lg:gap-y-[4rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem] ">
               <div className="flex flex-col relative w-[100%]">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Known Meedical Conditions
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -335,7 +335,7 @@ const Verification = () => {
                   Height (inch)
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -344,7 +344,7 @@ const Verification = () => {
                   Current Medications
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -353,7 +353,7 @@ const Verification = () => {
                   Weight (kg)
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -362,7 +362,7 @@ const Verification = () => {
                   Alergies
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -372,7 +372,7 @@ const Verification = () => {
                   Previous Surgeries
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -382,7 +382,7 @@ const Verification = () => {
                   Physician's Notes
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -400,13 +400,13 @@ const Verification = () => {
       case 5:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[2rem] lg:gap-y-[4rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem]">
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Certificate
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -416,7 +416,7 @@ const Verification = () => {
                   Issuer
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -426,7 +426,7 @@ const Verification = () => {
                   Year's Issued
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -444,13 +444,13 @@ const Verification = () => {
       case 6:
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
-            <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[2rem] lg:gap-y-[3rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem] ">
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   ID Card
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -460,7 +460,7 @@ const Verification = () => {
                   Card Name
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -470,7 +470,7 @@ const Verification = () => {
                   ID num
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -480,7 +480,7 @@ const Verification = () => {
                   Year Issued
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -503,13 +503,13 @@ const Verification = () => {
                             </div> */}
             <Layout className="p-[1rem] lg:p-[2rem] border-red-500 h-fit ">
               <h1 className="text-start mb-4">Gurantor 1</h1>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-[2rem] lg:gap-y-[3rem]">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-[2rem]">
                 <div className="flex flex-col relative w-[100%] ">
                   <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                     Name
                   </span>
                   <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                    className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                     placeholder=""
                   />
                 </div>
@@ -519,7 +519,7 @@ const Verification = () => {
                     Occupation
                   </span>
                   <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                    className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                     placeholder=""
                   />
                 </div>
@@ -529,7 +529,7 @@ const Verification = () => {
                     Phone no.
                   </span>
                   <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                    className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                     placeholder=""
                   />
                 </div>
@@ -538,7 +538,7 @@ const Verification = () => {
                     email
                   </span>
                   <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                    className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                     placeholder=""
                   />
                 </div>
@@ -562,17 +562,17 @@ const Verification = () => {
                   School
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
-              
+
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   State
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -582,7 +582,7 @@ const Verification = () => {
                     Start Year
                   </span>
                   <input
-                    className="border bg-white w-28 border-slate-500 rounded-xl text-md px-2 h-10 py-2"
+                    className="border bg-white w-28 border-gray-300 rounded-md text-md px-2 h-10 py-2"
                     placeholder=""
                   />
                 </div>
@@ -592,7 +592,7 @@ const Verification = () => {
                     Finish Year
                   </span>
                   <input
-                    className="border bg-white w-28 border-slate-500 rounded-xl text-md px-2 h-10 py-2"
+                    className="border bg-white w-28 border-gray-300 rounded-md text-md px-2 h-10 py-2"
                     placeholder=""
                   />
                 </div>
@@ -602,7 +602,7 @@ const Verification = () => {
                   Degree
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -616,7 +616,7 @@ const Verification = () => {
                   Nation
                 </span>
                 <input
-                  className="border  outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  className="border  outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -648,7 +648,7 @@ const Verification = () => {
                   Police Report of Conviction
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[50rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[50rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -658,7 +658,7 @@ const Verification = () => {
                   Education Act 2002
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[50rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[50rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -667,7 +667,7 @@ const Verification = () => {
                   Protection of Children Act List Information
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[50rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[50rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -676,7 +676,7 @@ const Verification = () => {
                   Protected Veteran
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[50rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[50rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -699,7 +699,7 @@ const Verification = () => {
                   Date of Payment
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[50rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[50rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -708,7 +708,7 @@ const Verification = () => {
                   Tax Directory
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[50rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[50rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -717,7 +717,7 @@ const Verification = () => {
                   Outstanding Tax
                 </span>
                 <input
-                  className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[50rem] py-1.5"
+                  className="border outline-none bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[50rem] py-1.5"
                   placeholder=""
                 />
               </div>
@@ -756,7 +756,7 @@ const Verification = () => {
         {steps.map((step, index) => (
           <span
             key={index}
-            className={`py-2 px-10 rounded-xl ${
+            className={`py-2 px-10 rounded-md ${
               completedSteps.has(index) || currentStep == index
                 ? "bg-blue-700 text-white"
                 : "bg-gray-300 text-black"

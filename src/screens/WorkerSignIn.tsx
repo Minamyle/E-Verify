@@ -24,9 +24,9 @@ const WorkerSignIn = () => {
   };
 
   return (
-    <div className="w-[100vw] h-[100vh] pl-[7.5%] flex flex-row items-center nunito justify-center max-w-[100vw] overflow-x-hidden">
+    <div className="w-[100vw] h-[100vh] lg:pl-[7.5%] flex flex-row items-center nunito justify-center max-w-[100vw] overflow-x-hidden">
       <RegisterationCard>
-        <div className="w-6/12 px-12 z-10 flex flex-col justify-center items-start h-[100vh]">
+        <div className="lg:w-6/12 w-[100%] border px-[1rem] lg:px-12 z-10 flex flex-col justify-center items-start h-[100vh]">
           <div className="flex items-center gap-12">
             <img
               src="https://cdn-icons-png.flaticon.com/128/149/149071.png"
@@ -39,23 +39,34 @@ const WorkerSignIn = () => {
             onSubmit={handleLogin}
             className="mt-16 w-[100%] flex flex-col gap-5"
           >
-            <input
-              className="border-b border-slate-500 text-md px-6 max-w-[27.5rem] py-2"
-              placeholder="Worker email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              type="password"
-              className="border-b border-slate-500 text-md px-6 max-w-[27.5rem] py-2"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div className="flex flex-col relative w-[100%]">
+              <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                Email
+              </span>
+              <input
+                className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                placeholder=""
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+
+            <div className="flex flex-col relative w-[100%]">
+              <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                Password
+              </span>
+              <input
+                className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                placeholder=""
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                type="password"
+              />
+            </div>
 
             <button
               type="submit"
-              className="max-w-[27.5rem] border bg-red-400 text-white py-2 mt-6 rounded-xl"
+              className="max-w-[27.5rem] border bg-red-400 text-white py-2 mt-6 rounded-md"
             >
               Sign In
             </button>
