@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Footer from "../components/Footer";
 import blackbg from "../../public/svg/blackbg.svg";
 import bluelogo from "../../public/svg/bluelogo.svg";
