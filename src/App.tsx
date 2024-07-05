@@ -23,6 +23,7 @@ import WorkerSignIn from "./screens/WorkerSignIn";
 import CompanySignIn from "./screens/CompanySignIn";
 import WorkerSignUp from "./screens/WorkerSignUp";
 import WorkExp from "./screens/WorkExp";
+import WorkerApply from "./screens/WorkerApply";
 const App = () => {
   const routes = [
     <Route
@@ -44,12 +45,22 @@ const App = () => {
     <Route path="/register" element={<RegisterScreen />} />,
     <Route path="/register/company" element={<CompanySignUp />} />,
     <Route path="/address" element={<Address />} />,
-    <Route path="/worker-verification" element={<Layout>
-      <Verification />
-    </Layout>} />,
-    <Route path="/worker-search" element={<Layout>
-      <WorkerSearch />
-    </Layout>} />,
+    <Route
+      path="/worker-verification"
+      element={
+        <Layout>
+          <Verification />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/worker-search"
+      element={
+        <Layout>
+          <WorkerSearch />
+        </Layout>
+      }
+    />,
     <Route path="/about-us" element={<AboutUs />} />,
     <Route path="/contact" element={<Contact />} />,
     <Route path="/faq" element={<FAQ />} />,
@@ -60,18 +71,33 @@ const App = () => {
     <Route path="/WorkerSignIn" element={<WorkerSignIn />} />,
     <Route path="/WorkerSignUp" element={<WorkerSignUp />} />,
     <Route path="/WorkExp" element={<WorkExp />} />,
+    <Route path="/WorkerApply" element={<WorkerApply />} />,
     <Route path="/CompanySignIn" element={<CompanySignIn />} />,
 
-    <Route path="/companyinfo" element={
-      <Layout>
-    <CompanyInfo />
-    </Layout>} />,
-    <Route path="/verification" element={<Layout>
-      <Verification />
-    </Layout>} />,
-    <Route path="/work-experience" element={<Layout>
-      <WorkExperience />
-    </Layout>} />,
+    <Route
+      path="/companyinfo"
+      element={
+        <Layout>
+          <CompanyInfo />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/verification"
+      element={
+        <Layout>
+          <Verification />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/work-experience"
+      element={
+        <Layout>
+          <WorkExperience />
+        </Layout>
+      }
+    />,
     // <Route path="/worker-info" element={<Layout>
     //   <WorkerInfo />
     // </Layout> } />
