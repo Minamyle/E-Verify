@@ -133,83 +133,83 @@ const Home = () => {
 
 
 
-      <div className="mt-20 h-fit overflow-x-scroll lg:overflow-x-hidden">
+      <div className="mt-20 w-[100%] overflow-x-scroll lg:overflow-x-hidden">
         <h1>History log</h1>
 
-        <div className="flex flex-row gap-4 w-fit text-[12px] mt-4">
-          <h1 className="w-[8.5rem] lg:w-[17.5rem] border text-center">Name</h1>
-          <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Admin</h1>
-          <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Time</h1>
-          <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Date</h1>
-          <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Status</h1>
+        <div className="flex w-fit flex-row gap-4 text-[12px] mt-4">
+          <h1 className="w-[17.5rem] text-center">Name</h1>
+          <h1 className="w-[17.5rem] text-center">Admin</h1>
+          <h1 className="w-[17.5rem] text-center">Time</h1>
+          <h1 className="w-[17.5rem] text-center">Date</h1>
+          <h1 className="w-[17.5rem] text-center">Status</h1>
         </div>
 
         <div className="flex w-fit flex-col gap-4 mt-4">
-          <button className="border ml-4 lg:ml-16 px-6 lg:px-8 text-[10px] lg:text-[14px] rounded-md w-fit py-2 bg-gray-300">
+          <button className="border ml-16 px-8 text-[14px] rounded-md w-fit py-2 bg-gray-300">
             May
           </button>
-          <div className="flex flex-col gap-4 text-[11px] lg:text-xl">
+          <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4">
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center ">Jamse Johnson</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Mary Jane</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">04:23:43</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">03-may-2024</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Accepted</h1>
+              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
+              <h1 className="w-[17.5rem] text-center">04:23:43</h1>
+              <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
+              <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center ">Jamse Johnson</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Mary Jane</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">04:23:43</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">03-may-2024</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Accepted</h1>
+              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
+              <h1 className="w-[17.5rem] text-center">04:23:43</h1>
+              <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
+              <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center ">Jamse Johnson</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Mary Jane</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">04:23:43</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">03-may-2024</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Accepted</h1>
+              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
+              <h1 className="w-[17.5rem] text-center">04:23:43</h1>
+              <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
+              <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center ">Jamse Johnson</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Mary Jane</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">04:23:43</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">03-may-2024</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Accepted</h1>
+              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
+              <h1 className="w-[17.5rem] text-center">04:23:43</h1>
+              <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
+              <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
           </div>
 
-          <button className="border mt-8 ml-4 lg:ml-16 px-6 lg:px-8 text-[10px] lg:text-[14px] rounded-md w-fit py-2 bg-gray-300">
+          <button className="border mt-8 ml-16 px-8 text-[14px] rounded-md w-fit py-2 bg-gray-300">
             June
           </button>
-          <div className="flex flex-col gap-4 text-[11px] lg:text-xl">
+          <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4">
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center ">Jamse Johnson</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Mary Jane</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">04:23:43</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">03-may-2024</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Accepted</h1>
+              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
+              <h1 className="w-[17.5rem] text-center">04:23:43</h1>
+              <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
+              <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center ">Jamse Johnson</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Mary Jane</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">04:23:43</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">03-may-2024</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Accepted</h1>
+              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
+              <h1 className="w-[17.5rem] text-center">04:23:43</h1>
+              <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
+              <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center ">Jamse Johnson</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Mary Jane</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">04:23:43</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">03-may-2024</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Accepted</h1>
+              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
+              <h1 className="w-[17.5rem] text-center">04:23:43</h1>
+              <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
+              <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center ">Jamse Johnson</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Mary Jane</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">04:23:43</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">03-may-2024</h1>
-              <h1 className="w-[8.5rem] lg:w-[17.5rem] text-center">Accepted</h1>
+              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
+              <h1 className="w-[17.5rem] text-center">04:23:43</h1>
+              <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
+              <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
           </div>
         </div>

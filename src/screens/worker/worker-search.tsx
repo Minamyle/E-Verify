@@ -52,7 +52,7 @@ const steps = [
         case 0:
           return (
             <div className="flex flex-col gap-4 justify-end items-end">
-              <Layout className="p-[1rem] px-[1rem] lg:px-[2rem] grid grid-cols-1 lg:grid-cols-2 gap-[1rem] gap-x-[2rem] pt-[2rem]">
+              <Layout className="p-[1rem] px-[1rem] lg:px-[2rem] grid grid-cols-1 lg:grid-cols-2 gap-[1rem] lg:gap-y-[2rem] lg:pb-[3rem] gap-x-[2rem] pt-[2rem]">
                 <div className="flex flex-col relative w-[100%] ">
                   <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                     Company Name
@@ -387,74 +387,91 @@ const steps = [
         case 4:
           return (
             <div className="flex flex-col gap-4 justify-end items-end">
-              <Layout className="p-[1rem] lg:p-[2rem] h-fit grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[1rem] lg:gap-y-[3rem]">
-                <div className="flex flex-col relative w-[100%]">
-                  <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                    Known Meedical Conditions
-                  </span>
-                  <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
-                    placeholder=""
-                  />
+              <Layout className="p-[1rem] lg:p-[2rem] h-fit flex flex-col gap-[2rem] gap-y-[1rem] lg:gap-y-[2rem]">
+                <div>
+                  <div className="flex items-center gap-6">
+                  <img src="https://www.shutterstock.com/image-photo/photo-sweet-adorable-young-lady-600nw-2045259326.jpg"
+                  className="w-10 h-10 rounded-full"/>
+
+                  <h1 className="font-[600]">Tope Akindeji</h1>
+
+                  <p className="text-gray-400 text-[13px]">1 week ago</p>
+                  </div>
+
+                  <div className="border relative border-gray-500 mt-3 rounded-md px-4 py-2">
+                    <h1 className="text-gray-600 text-[14px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </h1>
+                     <p className="absolute -bottom-3 bg-white shadow-sm shadow-gray-500 px-1 rounded-full right-8">
+                    😂👍🏾😅❤️⚙️
+                    </p>
+                  </div>
                 </div>
-                {/* <div></div> */}
-                <div className="flex flex-col relative w-[100%] ">
-                  <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                    Height (inch)
-                  </span>
-                  <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
-                    placeholder=""
-                  />
+
+                <div>
+                  <div className="flex items-center gap-6">
+                  <img src="https://www.shutterstock.com/image-photo/photo-sweet-adorable-young-lady-600nw-2045259326.jpg"
+                  className="w-10 h-10 rounded-full"/>
+
+                  <h1 className="font-[600]">Tope Akindeji</h1>
+
+                  <p className="text-gray-400 text-[13px]">1 week ago</p>
+                  </div>
+
+                  <div className="border relative border-gray-500 max-w-[30rem] mt-3 rounded-md px-4 py-2">
+                    <h1 className="text-gray-600 text-[14px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </h1>
+                     <p className="absolute -bottom-3 bg-white shadow-sm shadow-gray-500 px-1 rounded-full right-8">
+                    😂👍🏾😅❤️⚙️
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col relative w-[100%] ">
-                  <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                    Current Medications
-                  </span>
-                  <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
-                    placeholder=""
-                  />
+
+                <div>
+                  <div className="flex items-center gap-6">
+                  <img src="https://www.shutterstock.com/image-photo/photo-sweet-adorable-young-lady-600nw-2045259326.jpg"
+                  className="w-10 h-10 rounded-full"/>
+
+                  <h1 className="font-[600]">Tope Akindeji</h1>
+
+                  <p className="text-gray-400 text-[13px]">1 week ago</p>
+                  </div>
+
+                  <div className="border relative border-gray-500 mt-3 rounded-md px-4 py-2">
+                    <h1 className="text-gray-600 text-[14px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </h1>
+                     <p className="absolute -bottom-3 bg-white shadow-sm shadow-gray-500 px-1 rounded-full right-8">
+                    😂👍🏾😅❤️⚙️
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col relative w-[100%] ">
-                  <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                    Weight (kg)
-                  </span>
-                  <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
-                    placeholder=""
-                  />
+
+                <div>
+                  <div className="flex items-center gap-6">
+                  <img src="https://www.shutterstock.com/image-photo/photo-sweet-adorable-young-lady-600nw-2045259326.jpg"
+                  className="w-10 h-10 rounded-full"/>
+
+                  <h1 className="font-[600]">Tope Akindeji</h1>
+
+                  <p className="text-gray-400 text-[13px]">1 week ago</p>
+                  </div>
+
+                  <div className="border relative border-gray-500 mt-3 rounded-md px-4 py-2">
+                    <h1 className="text-gray-600 text-[14px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+                    </h1>
+
+                    <p className="absolute -bottom-3 bg-white shadow-sm shadow-gray-500 px-1 rounded-full right-8">
+                    😂👍🏾😅❤️⚙️
+                    </p>
+                  </div>
                 </div>
-                <div className="flex flex-col relative w-[100%] ">
-                  <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                    Alergies
-                  </span>
-                  <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
-                    placeholder=""
-                  />
-                </div>
-                <div></div>
-                <div className="flex flex-col relative w-[100%] ">
-                  <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                    Previous Surgeries
-                  </span>
-                  <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
-                    placeholder=""
-                  />
-                </div>
-                <div></div>
-                <div className="flex flex-col relative w-[100%] ">
-                  <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
-                    Physician's Notes
-                  </span>
-                  <input
-                    className="border outline-none bg-white mt-3 border-slate-500 rounded-md text-md px-6 max-w-[30rem] py-1.5"
-                    placeholder=""
-                  />
-                </div>
-                <div></div>
               </Layout>
               <button
                 type="button"

@@ -78,6 +78,135 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
+      <div className="mt-10 flex flex-row flex-wrap gap-6 text-white">
+        <Link to="/register">
+        Register
+        </Link>
+
+        <Link to="/register/company">
+        Register company
+        </Link>
+
+        <Link to="/address">
+        address
+        </Link>
+
+        <Link to="/worker-verification">
+        worker-verification
+        </Link>
+
+        <Link to="/history">
+        history
+        </Link>
+
+        <Link to="/worker-request">
+        worker-request
+        </Link>
+
+        <Link to="/add-worker">
+        add-worker
+        </Link>
+
+        <Link to="/add-experience">
+        add-experience
+        </Link>
+
+
+
+
+
+        <Link to="/add-experience-autofill">
+        add-experience-autofill
+        </Link>
+
+        <Link to="/resignation">
+        resignation
+        </Link>
+
+        <Link to="/add-education">
+        add-education
+        </Link>
+
+        <Link to="/add-cart">
+        add-cart
+        </Link>
+
+        <Link to="/add-address">
+        add-address
+        </Link>
+
+        <Link to="/worker-search">
+        worker-search
+        </Link>
+
+
+
+
+
+
+        <Link to="/CompanyPostJobafterInterview">
+        CompanyPostJobafterInterview
+        </Link>
+
+        <Link to="/WorkerSignIn">
+        WorkerSignIn
+        </Link>
+
+        <Link to="/WorkerSignUp">
+        WorkerSignUp
+        </Link>
+
+        <Link to="/WorkExp">
+        WorkExp
+        </Link>
+
+        <Link to="/CompanySignIn">
+        CompanySignIn
+        </Link>
+
+        <Link to="/CompanySignIn">
+        CompanySignIn
+        </Link>
+
+
+
+
+
+
+
+        <Link to="/verification">
+        verification
+        </Link>
+
+        <Link to="/work-experience">
+        work-experience
+        </Link>
+
+        <Link to="/worker-info">
+        worker-info
+        </Link>
+
+        <Link to="/gurantor-otp">
+        gurantor-otp
+        </Link>
+
+
+
+        <Link to="/dashboard-comment">
+        dashboard-comment
+        </Link>
+
+        <Link to="/dashboard-log">
+        dashboard-log
+        </Link>
+
+        <Link to="/job-application">
+        /job-application
+        </Link>
+
+        
+      </div>
     </div>
   );
 };

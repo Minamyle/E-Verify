@@ -16,31 +16,65 @@ const CompanySignUp = () => {
           </div>
 
           <div className="mt-16 w-[100%] flex flex-col gap-5">
-            <input
-              className="border-b border-slate-500 text-md px-6 max-w-[27.5rem] py-2"
-              placeholder="Commpany name"
-            />
-            <input
-              className="border-b border-slate-500 text-md px-6 max-w-[27.5rem] py-2"
-              placeholder="Commpany email"
-            />
-            <input
-              className="border-b border-slate-500 text-md px-6 max-w-[27.5rem] py-2"
-              placeholder="Organization"
-            />
-            <input
-              className="border-b border-slate-500 text-md px-6 max-w-[27.5rem] py-2"
-              placeholder="Commpany size"
-            />
-            <input
-              className="border-b border-slate-500 text-md px-6 max-w-[27.5rem] py-2"
-              placeholder="Password"
-            />
-            <input
-              className="border-b border-slate-500 text-md px-6 max-w-[27.5rem] py-2"
-              placeholder="re-type pssword"
-            />
-            <button className="max-w-[27.5rem] border bg-red-400 text-white py-2 mt-6 rounded-xl">
+          <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Company name
+                </span>
+                <input
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  placeholder=""
+                />
+              </div>
+
+
+            <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Company Email
+                </span>
+                <input
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  placeholder=""
+                />
+              </div>
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Organzation
+                </span>
+                <input
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  placeholder=""
+                />
+              </div>
+
+
+            <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Company Size
+                </span>
+                <input
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  placeholder=""
+                />
+              </div>
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Password
+                </span>
+                <input
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  placeholder=""
+                />
+              </div>
+              <div className="flex flex-col relative w-[100%]">
+                <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
+                  Re-type Password
+                </span>
+                <input
+                  className="border bg-white mt-3 border-gray-300 rounded-md text-md px-6 max-w-[30rem] py-1.5"
+                  placeholder=""
+                />
+              </div>
+            <button className="max-w-[30rem] border bg-red-400 text-white py-2 mt-6 rounded-xl">
               Sign up
             </button>
           </div>

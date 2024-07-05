@@ -1,6 +1,4 @@
-// import RegisterationCard from "../components/RegisterationCard";
 
-import Footer from "../components/Footer";
 import lappedImages from "../../public/svg/lappedImages.svg";
 
 const CompanyPostJobafterInterview = () => {
@@ -12,7 +10,7 @@ const CompanyPostJobafterInterview = () => {
           style={{ backgroundImage: "url('/svg/loginBg.svg')" }}
         ></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-          <img src={lappedImages} alt="" />
+          <img src={lappedImages} alt="" className=""/>
           <h3 className="font-bold">
             James Johnson +James Johnson +James Johnson +James Johnson
           </h3>
@@ -52,9 +50,6 @@ const CompanyPostJobafterInterview = () => {
         </div>
       </div>
 
-      <div className="mt-5">
-        <Footer />
-      </div>
     </>
   );
 };

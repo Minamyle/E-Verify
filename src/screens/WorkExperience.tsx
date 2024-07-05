@@ -9,8 +9,8 @@ const Layout = ({
   className: string;
 }) => {
   return (
-    <div className="flex w-[100%] justify-between">
-      <div className="border border-slate-700 rounded-xl w-3/12 h-[30rem] overflow-hidden flex flex-col justify-evenly items-center">
+    <div className="flex flex-col gap-12 lg:gap-0 lg:flex-row w-[100%] justify-between">
+      <div className="border border-slate-700 rounded-xl w-[100%] lg:w-3/12 h-[30rem] overflow-hidden flex flex-col justify-evenly items-center">
         <h1 className="font-[600]">Identification Verification Photo</h1>
         <img
           src="https://guardian.ng/wp-content/uploads/2023/05/bigstock-1619644371.jpg"
@@ -20,7 +20,7 @@ const Layout = ({
       </div>
 
       <div
-        className={`w-8/12 h-fit border border-slate-700 rounded-xl ${className}`}
+        className={`w-[100%] lg:w-8/12 h-fit border border-slate-700 rounded-xl ${className}`}
       >
         {children}
       </div>
@@ -30,12 +30,12 @@ const Layout = ({
 const WorkExperience = () => {
   const [tab, setTab] = useState("form");
   return (
-    <div className="max-w-[90rem] inter py-0 pb-16 mx-auto">
+    <div className="max-w-[90rem] px-[1rem] inter py-0 pb-16 mx-auto">
       <div className="mt-20">
         <div className="flex flex-col gap-4 justify-end items-end">
           <h1>Work Experience &gt; (Company Name) </h1>
           {tab == "form" ? (
-            <Layout className="p-[2rem] grid grid-cols-2 gap-[2rem]">
+            <Layout className="p-[1rem] lg:p-[2rem] flex flex-col lg:grid grid-cols-2 gap-[2rem]">
               <div className="flex flex-col relative w-[100%] ">
                 <span className="absolute bg-white text-gray-500 left-4 text-[14px] px-2">
                   Company
@@ -117,10 +117,10 @@ const WorkExperience = () => {
                 />
               </div>
 
-              <div className="flex flex-col col-span-2 relative w-[100%] rounded-md p-3">
+              <div className="flex flex-col col-span-2 overflow-x-scroll lg:overflow-x-hidden relative w-[100%] rounded-md p-3">
                 <p className="text-gray-500 text-[13px]">Rate workers</p>
 
-                <div className="w-[100%] flex flex-col gap-4">
+                <div className="w-fit lg:w-[100%] flex flex-col gap-4">
                   <div className="flex gap-6">
                     <div className="w-40"></div>
                     <p className="w-28 text-center">Poor</p>
