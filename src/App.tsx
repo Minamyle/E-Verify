@@ -23,6 +23,7 @@ import WorkerSignIn from "./screens/WorkerSignIn";
 import CompanySignIn from "./screens/CompanySignIn";
 import WorkerSignUp from "./screens/WorkerSignUp";
 import WorkExp from "./screens/WorkExp";
+import WorkerApply from "./screens/WorkerApply";
 import RequestWorker from "./screens/worker/gurantor/request-gurantor";
 import AddGurantor from "./screens/worker/gurantor/add-gurantor";
 import AddToCart from "./screens/worker/cart/add-cart";
@@ -40,6 +41,7 @@ import DashboardLog from "./screens/dashboard/log";
 import SearchWorker from "./screens/worker/search-worker";
 import SelectCompanyWorker from "./screens/worker/select-company-worker";
 import AfterInterview from "./screens/worker/after-interview";
+import VerifyPage from "./screens/VerifyPage";
 const App = () => {
   const routes = [
     <Route
@@ -79,10 +81,34 @@ const App = () => {
     <Route path="/register/company" element={<CompanySignUp />} />,
     <Route path="/address" element={<Address />} />,
     <Route
-      path="/worker-search"
+      path="/worker-verification"
       element={
         <Layout>
           <Verification />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/worker-search"
+      element={
+        <Layout>
+          <WorkerSearch />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/worker-verification"
+      element={
+        <Layout>
+          <Verification />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/worker-search"
+      element={
+        <Layout>
+          <WorkerSearch />
         </Layout>
       }
     />,
@@ -188,10 +214,18 @@ const App = () => {
       }
     />,
     <Route
-      path="/worker-verify"
+      path="/worker-search"
       element={
         <Layout>
           <WorkerSearch />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/worker-verify"
+      element={
+        <Layout>
+          <VerifyPage />
         </Layout>
       }
     />,
@@ -212,8 +246,36 @@ const App = () => {
     <Route path="/WorkerSignIn" element={<WorkerSignIn />} />,
     <Route path="/WorkerSignUp" element={<WorkerSignUp />} />,
     <Route path="/WorkExp" element={<WorkExp />} />,
+    <Route path="/WorkerApply" element={<WorkerApply />} />,
     <Route path="/CompanySignIn" element={<CompanySignIn />} />,
 
+    <Route
+      path="/companyinfo"
+      element={
+        <Layout>
+          <CompanyInfo />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/verification"
+      element={
+        <Layout>
+          <Verification />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/work-experience"
+      element={
+        <Layout>
+          <WorkExperience />
+        </Layout>
+      }
+    />,
+    // <Route path="/worker-info" element={<Layout>
+    //   <WorkerInfo />
+    // </Layout> } />
     <Route
       path="/companyinfo"
       element={
