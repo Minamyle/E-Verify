@@ -5,9 +5,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 const navItems = [
     { label: "Home", href: "/" },
-    { label: "Verify", href: "/verify" },
+    { label: "Verify", href: "/worker-verification" },
     { label: "About us", href: "/about-us" },
-    { label: "Contact", href: "/contact-us" },
+    { label: "Jobs", href: "/contact-us" },
     { label: "FAQ", href: "/faq" },
   ];
 
@@ -26,20 +26,20 @@ const Navbar = () => {
             {/* <img className="h-7 w-7 mr-2" src='/logo.png' alt="Logo" /> */}
             <span className="text-2xl font-bold tracking-tight">Logo</span>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12">
+          <ul className="hidden text-[16px] lg:flex ml-14 space-x-20">
             {navItems.map((item, index) => (
               <li key={index}>
                 <Link to={item.href}>{item.label}</Link>
               </li>
             ))}
           </ul>
-          <div className="hidden lg:flex justify-center space-x-12 items-center">
+          <div className="hidden lg:flex text-[16px] justify-center text-lg space-x-12 items-center">
             <Link to="/WorkerSignIn" className="py-2 px-3 border rounded-md">
               Sign In
             </Link>
             <Link
               to="/WorkerSignUp"
-              className="bg-red-400 py-2 px-3 rounded-md"
+              className="bg-red-500 text-white py-2 px-3 rounded-md"
             >
               Create an account
             </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="fixed right-0 z-20 bg-white text-black w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">

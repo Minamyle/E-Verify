@@ -37,6 +37,9 @@ import AddAddress from "./screens/worker/add-address";
 import JobApplication from "./screens/application/job-application";
 import Comment from "./screens/dashboard/comment";
 import DashboardLog from "./screens/dashboard/log";
+import SearchWorker from "./screens/worker/search-worker";
+import SelectCompanyWorker from "./screens/worker/select-company-worker";
+import AfterInterview from "./screens/worker/after-interview";
 const App = () => {
   const routes = [
     <Route
@@ -75,84 +78,191 @@ const App = () => {
     <Route path="/register" element={<RegisterScreen />} />,
     <Route path="/register/company" element={<CompanySignUp />} />,
     <Route path="/address" element={<Address />} />,
-    <Route path="/worker-verification" element={<Layout>
-      <Verification />
-    </Layout>} />,
-    <Route path="/history" element={<Layout>
-      <HistoryLog />
-    </Layout>} />,
-    <Route path="/worker-request" element={<Layout>
-      <RequestWorker />
-    </Layout>} />,
-    <Route path="/add-worker" element={<Layout>
-      <AddGurantor />
-    </Layout>} />,
+    <Route
+      path="/worker-search"
+      element={
+        <Layout>
+          <Verification />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/history"
+      element={
+        <Layout>
+          <HistoryLog />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/worker-request"
+      element={
+        <Layout>
+          <RequestWorker />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/after-interview"
+      element={
+        <Layout>
+          <AfterInterview />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/select-company-worker"
+      element={
+        <Layout>
+          <SelectCompanyWorker />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/add-worker"
+      element={
+        <Layout>
+          <AddGurantor />
+        </Layout>
+      }
+    />,
 
-<Route path="/add-experience" element={<Layout>
-  <AddExperience />
-</Layout>} />,
-<Route path="/job-application" element={<Layout>
-  <JobApplication />
-</Layout>} />,
+    <Route
+      path="/add-experience"
+      element={
+        <Layout>
+          <AddExperience />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/job-application"
+      element={
+        <Layout>
+          <JobApplication />
+        </Layout>
+      }
+    />,
 
-<Route path="/add-experience-autofill" element={<Layout>
-  <AddExperienceAutoFill />
-</Layout>} />,
+    <Route
+      path="/add-experience-autofill"
+      element={
+        <Layout>
+          <AddExperienceAutoFill />
+        </Layout>
+      }
+    />,
 
-<Route path="/resignation" element={<Layout>
-  <Resignation />
-</Layout>} />,
-<Route path="/add-education" element={<Layout>
-  <AddEducation />
-</Layout>} />,
-<Route path="/add-cart" element={<Layout>
-  <AddToCart />
-</Layout>} />,
+    <Route
+      path="/resignation"
+      element={
+        <Layout>
+          <Resignation />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/add-education"
+      element={
+        <Layout>
+          <AddEducation />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/add-cart"
+      element={
+        <Layout>
+          <AddToCart />
+        </Layout>
+      }
+    />,
 
-
-// not done yet
-<Route path="/add-address" element={<Layout>
-  <AddAddress />
-</Layout>} />,
-    <Route path="/worker-search" element={<Layout>
-      <WorkerSearch />
-    </Layout>} />,
+    // not done yet
+    <Route
+      path="/add-address"
+      element={
+        <Layout>
+          <AddAddress />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/worker-verify"
+      element={
+        <Layout>
+          <WorkerSearch />
+        </Layout>
+      }
+    />,
     <Route path="/about-us" element={<AboutUs />} />,
     <Route path="/contact" element={<Contact />} />,
     <Route path="/faq" element={<FAQ />} />,
-
-
 
     //amina didnt mke this mobile responsive
     <Route
       path="/CompanyPostJobafterInterview"
       element={
-        <Layout><CompanyPostJobafterInterview />
-        </Layout>}
+        <Layout>
+          <CompanyPostJobafterInterview />
+        </Layout>
+      }
     />,
 
-    
     <Route path="/WorkerSignIn" element={<WorkerSignIn />} />,
     <Route path="/WorkerSignUp" element={<WorkerSignUp />} />,
     <Route path="/WorkExp" element={<WorkExp />} />,
     <Route path="/CompanySignIn" element={<CompanySignIn />} />,
 
-    <Route path="/companyinfo" element={
-      <Layout>
-    <CompanyInfo />
-    </Layout>} />,
-    <Route path="/verification" element={<Layout>
-      <Verification />
-    </Layout>} />,
-    <Route path="/work-experience" element={<Layout>
-      <WorkExperience />
-    </Layout>} />,
-    <Route path="/worker-info" element={<Layout>
-      <WorkerInfo />
-    </Layout> } />,
-    <Route path="/gurantor-otp" element={<Layout>
-      <RequestGurantorOtp />
-    </Layout> } />,
+    <Route
+      path="/companyinfo"
+      element={
+        <Layout>
+          <CompanyInfo />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/verification"
+      element={
+        <Layout>
+          <Verification />
+        </Layout>
+      }
+    />,
+
+    <Route
+      path="/search-worker"
+      element={
+        <Layout>
+          <SearchWorker />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/work-experience"
+      element={
+        <Layout>
+          <WorkExperience />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/worker-info"
+      element={
+        <Layout>
+          <WorkerInfo />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/gurantor-otp"
+      element={
+        <Layout>
+          <RequestGurantorOtp />
+        </Layout>
+      }
+    />,
     // <Route
     //   path="/verification"
     //   element={
