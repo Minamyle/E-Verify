@@ -38,6 +38,9 @@ import AddAddress from "./screens/worker/add-address";
 import JobApplication from "./screens/application/job-application";
 import Comment from "./screens/dashboard/comment";
 import DashboardLog from "./screens/dashboard/log";
+import SearchWorker from "./screens/worker/search-worker";
+import SelectCompanyWorker from "./screens/worker/select-company-worker";
+import AfterInterview from "./screens/worker/after-interview";
 const App = () => {
   const routes = [
     <Route
@@ -96,6 +99,9 @@ const App = () => {
       path="/worker-verification"
       element={
         <Layout>
+      path="/worker-search"
+      element={
+        <Layout>
           <Verification />
         </Layout>
       }
@@ -113,6 +119,22 @@ const App = () => {
       element={
         <Layout>
           <RequestWorker />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/after-interview"
+      element={
+        <Layout>
+          <AfterInterview />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/select-company-worker"
+      element={
+        <Layout>
+          <SelectCompanyWorker />
         </Layout>
       }
     />,
@@ -187,6 +209,7 @@ const App = () => {
     />,
     <Route
       path="/worker-search"
+      path="/worker-verify"
       element={
         <Layout>
           <WorkerSearch />
@@ -253,6 +276,12 @@ const App = () => {
       element={
         <Layout>
           <Verification />
+
+    <Route
+      path="/search-worker"
+      element={
+        <Layout>
+          <SearchWorker />
         </Layout>
       }
     />,

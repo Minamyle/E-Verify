@@ -191,7 +191,7 @@ const Verification = () => {
         return (
           <div className="flex flex-col gap-4 justify-end items-end">
             <Layout className="p-[1rem] lg:p-[2rem] border-red-600 flex flex-col lg:grid grid-cols-1 lg:grid-cols-2 gap-[2rem] gap-y-[1rem]">
-            <div className="flex flex-col relative w-[100%]">
+              <div className="flex flex-col relative w-[100%]">
                 <span className="absolute bg-white text-gray-500 text-[12px] left-4 px-2">
                   School
                 </span>
@@ -728,6 +728,62 @@ const Verification = () => {
               onClick={handleNext}
             >
               Next
+            </button>
+          </div>
+        );
+      case 11:
+        return (
+          <div className="flex flex-col gap-4 justify-end items-end">
+            <Layout className="p-[1rem] relative lg:p-[2rem] border-red-300 h-fit ">
+              {/* <h1>e-certify</h1> */}
+              <div className="flex justify-between w-[100%]">
+                <div className="flex flex-col gap-3">
+                  <div className="text-[15px] flex text-slate-500 w-fit">
+                    <h1 className="w-[10rem]">Full Name:</h1> <span className="text-slate-700 ml-4">James Johnson</span>
+                  </div>
+                  <div className="text-[15px] flex text-slate-500 w-fit">
+                    <h1 className="w-[10rem]">Current Address:</h1> <span className="text-slate-700 ml-4">21, Iyala street, Abuja Lagos state</span>
+                    
+                  </div>
+
+                  <div className="text-[15px] flex text-slate-500 w-fit">
+                    <h1 className="w-[10rem]">Current Workplace:</h1> <span className="text-slate-700 ml-4">Chicken plc</span>
+                  </div>
+
+                  <div className="text-[15px] flex text-slate-500 w-fit">
+                    <h1 className="w-[10rem]">Current Employer:</h1> <span className="text-slate-700 ml-4">DJ Chicken</span>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="flex gap-4">
+                    <h1 className="text-center text-[13px] text-gray-400">Date Issued <br /> <span className="text-[14px] font-[500] text-gray-600">11-02-03</span></h1>
+                    <h1 className="text-center text-[13px] text-gray-400">Exp Issued <br /><span className="text-[14px] font-[500] text-gray-600">11-02-03</span></h1>
+                  </div>
+
+                  <img src="/verify.svg" className="mt-3"/>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <h1>Medical Report</h1>
+
+                <p className="text-gray-600 text-[14px] border px-4 py-2 rounded-xl mt-3">James Johnson has slight fracture in hhis left leg and also swollen limbs with broken fracture. James Johnson has slight fracture in hhis left leg and also swollen limbs with broken fracture. James Johnson has slight fracture in hhis left leg and also swollen limbs with broken fracture. James Johnson has slight fracture in hhis left leg and also swollen limbs with broken fracture.</p>
+
+                <h1 className="mt-6">Police Report of Conviction</h1>
+
+                <p className="text-gray-600 text-[14px] border px-4 py-2 rounded-xl mt-3">None</p>
+
+
+              </div>
+
+              <p className="mt-12 text-[12px] text-center text-gray-500">This is to certify that this recipient has been verified by e-verify in the following aspect to work in ay organization for the next 2 years after the issued date</p>
+            </Layout>
+            <button
+              type="button"
+              className="border bg-red-400 px-6 py-2 rounded-md text-white"
+              onClick={handleNext}
+            >
+              Schedule Interview
             </button>
           </div>
         );

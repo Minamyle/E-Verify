@@ -23,317 +23,72 @@ import blue1 from "../../public/svg/blue.svg";
 import yellow1 from "../../public/svg/yellow.svg";
 import red1 from "../../public/svg/red2.svg";
 import { Link } from "react-router-dom";
-
-// const HomeScreen = () => {
-//   return (
-//     <>
-//       <div className="px-32 w-[50%] pt-[7rem]">
-// <img
-//   src="/svg/loginBg.svg"
-//   className="absolute w-[100vw] h-[100vh] top-0 left-0 object-cover z-0"
-// />
-//         <div className="z-10 relative mt-[6rem] ">
-//           <div className="">
-//             <h1 className="font-bold text-5xl leading-[3rem]">
-//               Disclosure and Barring Service
-//             </h1>
-//             <p className="font-bold z-10 relative mt-5 mb-5">
-//               Request standard and enhanced personal record checks for eligible
-//               positions for jobs in Nigerian.
-//             </p>
-//           </div>
-//           <div className="gap-5 flex  ">
-//             <Button className=" w-[50%] rounded-3xl bg-[#39399D] text-white whitspace-nowrap p-3">
-//               Background Check
-//             </Button>
-//             <Button className=" w-[50%] rounded-3xl bg-[#FB4F4F] text-white whitespace-nowrap p-3">
-//               Professional Check
-//             </Button>
-//           </div>
-//         </div>
-// <div className="w-6/12 relative flex z-10 flex-col items-center justify-center h-[100vh] ">
-//   <img
-//     src={naira}
-//     alt=""
-//     className="object-contain absolute top-[1.5%] w-[12.5rem] h-[12.5rem] right-[25%]"
-//   />
-//   <img
-//     src={spread}
-//     alt=""
-//     className="object-contain w-[50rem] mb-[70rem] ml-[60rem]  "
-//   />
-//   <img
-//     src={cap}
-//     alt=""
-//     className="object-contain w-[15rem] h-[100rem] absolute ml-[100rem] bottom-[5%] "
-//   />
-//   <img
-//     src={dollar}
-//     alt=""
-//     className="object-contain absolute top-[-10rem] w-[8.5rem]   rotate-180 ml-[100rem]"
-//   />
-// </div>
-//       </div>
-//       <div className=" z-10 relative bg-white mt-[-20rem]">
-//         <h1 className="text-3xl text-center mb-5">
-//           <b>About</b> <i className="text-[#FB4F4F] font-bold">e-verify</i>
-//         </h1>
-//         <p className="text-center mb-5">
-//           We are a leading provider of criminality checks with over 20,000
-//           registered clients/organisations, and what's{" "}
-//           <p className="text-center">
-//             {" "}
-//             more our team has been screening for over 25 years.
-//           </p>
-//         </p>
-
-//         <div className="flex justify-between px-32 ">
-//           <div className="border-l-4 border-[#FB4F4F] bg-[#F6F3F3] rounded ml-5 w-[50%] p-5 ">
-//             <h1 className="text-5xl font-bold mb-5 text-[#fb4f4f]">
-//               Disclosure and bearing Service
-//             </h1>
-//             <p className="w-[55%] mb-5">
-// Organisations can request standard and enhanced criminal record
-// checks for eligible positions in England and Wales.
-//             </p>
-//             <Button className=" p-2 rounded-2xl bg-[#39399D] text-white whitespace-nowrap">
-//               register your organisation online now
-//             </Button>
-//           </div>
-//           <div className="border-l-4 border-[#39399D]  bg-[#F6F3F3] rounded ml-5 w-[50%] p-5">
-//             <h1 className="text-5xl font-bold mb-5 text-[#39399D] ">
-//               Professional Remarks
-//             </h1>
-//             <p className="w-[55%] mb-5">
-//               Organisations can request standard and enhanced criminal record
-//               checks for eligible positions in England and Wales.
-//             </p>
-//             <Button className=" p-2 rounded-2xl bg-[#FB4F4F] text-white whitespace-nowrap">
-//               register your organisation online now
-//             </Button>
-//           </div>
-//         </div>
-
-//         <div className="flex mt-[5rem]">
-//           <div className="w-[50%]">
-//             <img src={man} alt="" className="w-[30rem]" />
-//             <div className="flex justify-between mb-5">
-//               <img src={yellow} alt="" className=" w-[8.5rem] mt-[-5rem]" />
-//               <img src={woman} alt="" className="mt-[-4rem]" />
-//             </div>
-//           </div>
-//           <div className="m-[8rem] text-end w-[50%]">
-//             <h1 className="text-5xl font-bold ">
-//               Looking for the <br /> Right{" "}
-//               <span className="text-[#fb4f4f]">Employee</span> or <br /> want to
-//               post a <span className="text-[#fb4f4f]">Job</span>
-//             </h1>
-//             <p className="mt-5 mb-5">
-//               Organisations can request standard and <br />
-//               enhanced criminal record checks for eligible <br /> positions in
-//               England and Wales.
-//             </p>
-//             <Button className=" p-3 rounded-3xl bg-[#FB4F4F] text-white whitespace-nowrap">
-//               Search for verified personel
-//             </Button>
-//           </div>
-//         </div>
-
-//         <div className="mb-5 mt-5 flex ">
-//           <div className="w-[50%] ml-32">
-//             <h1 className="text-6xl font-bold mb-3">
-//               Know everything about{" "}
-//               <span className="text-[#fb4f4f]">Applicants</span>{" "}
-//             </h1>
-//             <div className="flex gap-3 mb-3 ">
-//               <div>
-//                 <img src={police} alt="" />
-//               </div>
-//               <div>
-//                 <p>Police security check</p>
-//               </div>
-//             </div>
-//             <div className="flex gap-3 mb-3 ">
-//               <div>
-//                 <img src={bank} alt="" />
-//               </div>
-//               <div>
-//                 <p>Bank details check</p>
-//               </div>
-//             </div>
-//             <div className="flex gap-3 mb-3 ">
-//               <div>
-//                 <img src={id} alt="" />
-//               </div>
-//               <div>
-//                 <p>ID check</p>
-//               </div>
-//             </div>
-//             <div className="flex gap-3 mb-3">
-//               <div>
-//                 <img src={education} alt="" />
-//               </div>
-//               <div>
-//                 <p>Education credentials</p>
-//               </div>
-//             </div>
-//             <div className="flex gap-3 mb-3">
-//               <div>
-//                 <img src={medical} alt="" />
-//               </div>
-//               <div>
-//                 <p>Medical</p>
-//               </div>
-//             </div>
-//             <div className="flex gap-3 mb-3">
-//               <div>
-//                 <img src={gaurantor} alt="" />
-//               </div>
-//               <div>
-//                 <p>garantors and referees</p>
-//               </div>
-//             </div>
-//             <div className="flex gap-3 mb-3">
-//               <div>
-//                 <img src={and} alt="" />
-//               </div>
-//               <div>
-//                 <p>and many more</p>
-//               </div>
-//             </div>
-//             <div className="border-b-4 border-[#FB4F4F] ml-[3rem] w-[35%]"></div>
-//           </div>
-//           <div className="w-[50%]">
-//             <img src={herolady} alt="" className="w-[50rem]" />
-//             <div className="ml-[30rem] w-[7rem]">
-//               <img src={yellow} alt="" className="rotate-180 " />
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="">
-//           <img src={videoImage} alt="" />
-//           <div className="flex p-[3rem] gap-5 ml-5">
-//             <img src={hero3} alt="" className="rotate-270" />
-//             <div className="ml-[5rem]">
-//               <h1 className="text-5xl font-bold ">Job Posting is possible</h1>
-//               <Button className=" p-2 rounded-2xl bg-[#FB4F4F] text-white whitespace-nowrap mt-5 ml-[8rem]">
-//                 Search for verified personel
-//               </Button>
-//               <div className="z-10 relative">
-//                 <img
-//                   src={yellow1}
-//                   alt=""
-//                   className="object-contain absolute top-[-2rem] w-[12.5rem] h-[1rem] right-[5%]  "
-//                 />
-//                 <img
-//                   src={blue1}
-//                   alt=""
-//                   className="object-contain absolute top-[-6rem] w-[1.5rem] h-[12.5rem] right-[15%]  "
-//                 />
-//                 <img
-//                   src={red1}
-//                   alt=""
-//                   className="object-contain absolute top-[-9rem] w-[2rem] h-[12.5rem] right-[10%]  "
-//                 />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* <div className="flex flex-col relative w-[100%]">
-//           <img src={guyImage} alt="" />
-//           <div className=" bg-white left-[50px]">
-//             <h1>Know more about employess more than the papers</h1>
-//             <Button className=" p-2 rounded-2xl bg-[#FB4F4F] text-white whitespace-nowrap">
-//               Register Now
-//             </Button>
-//           </div>
-//         </div> */}
-//         <div className="flex flex-col relative w-[100%]">
-//           <span className="absolute bg-white left-6 text-[14px] px-2  z-0">
-//             <img src={guyImage} alt="" className="" />
-//           </span>
-//           <div className="border bg-[#d0cfd0] mt-[27rem] border-slate-500 h-[25vh] text-md px-6 max-w-[25rem] py-2 z-10 ml-[58rem] leading-[1rem]">
-//             <h1 className="text-end text-xl mb-2 font-bold">
-//               Know more about employess more than the papers
-//             </h1>
-//             <div className="text-end mt-5">
-//               <Button className=" p-1 rounded-2xl bg-[#FB4F4F] text-white whitespace-nowrap">
-//                 Register Now
-//               </Button>{" "}
-//             </div>
-//           </div>
-//         </div>
-//         <div className="mt-[5rem] flex relative w-[100%]  ">
-//           <span className="absolute bg-white left-6 text-[14px] px-2 z-0">
-//             <img src={hero} alt="" />
-//           </span>
-//           <div className=" text-center justify-center border-slate-500 rounded-xl text-md px-6 max-w-[25rem] py-2 z-10 text-white  ml-[30rem] mt-[15rem] leading-[2rem]">
-//             <div className="text-center  ">
-//               <h1 className="text-3xl mb-5">
-//                 Why Choose <i className="text-[#FB4F4F]"> E- verify </i>
-//               </h1>
-//               <p>
-//                 Organisations can request standard and enhanced criminal record
-//                 checks for eligible positions in England and Wales.
-//               </p>
-//               <Button className=" p-1 rounded-2xl bg-[#39399D] text-white whitespace-nowrap mt-5">
-//                 Register Now
-//               </Button>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default HomeScreen;
-
-// import naira from "../../public/svg/naira.svg";
-// import dollar from "../../public/svg/dollar.svg";
-// import cap from "../../public/svg/cap.svg";
+import { useState } from "react";
 
 const HomeScreen = () => {
+  const [isLoggedin, setIsLoggedin] = useState(true);
+  const [userSearched, setUserSearched] = useState(true)
   return (
     <div className="inter ">
       <img
         src="/svg/loginBg.svg"
         className="absolute w-[100vw] h-fit top-0 left-0 object-cover z-0"
       />
-      <div className="lg:h-[100vh] 
-       relative z-10 flex flex-col pt-[5rem] lg:pt-0 w-[100vw] px-[7%]  justify-center">
-        <h1 className="text-[4rem] lg:text-[5rem] font-[600] leading-[4rem] lg:leading-[5.5rem]">
-          Disclosure and <br /> Barring Service
-        </h1>
-        <p className="text-xl mt-8">
-          Request standard and enhanced personal record checks for <br />{" "}
-          eligible positions for jobs in Nigeria.
-        </p>
-        <div className="mt-6 flex gap-4 lg:gap-8 flex-col lg:flex-row">
-          <Link to='/work-experience'>
-            <button className="bg-blue-800 text-white px-8 py-3 rounded-full">
-            Background Check
-          </button>
-          </Link>
-          <Link to='/dashboard'>
-          <button className="bg-red-500 text-white px-8 py-3 rounded-full">
-            Professional Check
-          </button>
-          </Link>
-        </div>
-        {/* <div className="w-6/12 relative flex z-10 flex-col items-center justify-center h-[100vh] "> */}
+      <div
+        className={`lg:h-[100vh] 
+       relative z-10 flex flex-col pt-[5rem] lg:pt-0 w-[100vw] px-[7%]  justify-center ${isLoggedin && 'lg:h-[60vh]'}`}
+      >
+        {isLoggedin ? (
+          <div>
+            <h1 className="text-[4rem] lg:text-[5rem] font-[600] leading-[4rem] lg:leading-[5.5rem]">
+              Perform a Search
+            </h1>
+            <div className="mt-3 flex gap-10">
+              <button className="px-16 py-4 text-xl rounded-full bg-blue-700 text-white">
+                Background
+              </button>
+              <button className="px-16 py-4 text-xl rounded-full text-gray-400 border ">
+                Professional
+              </button>
+            </div>
+
+            <div className="flex gap-4 mt-16">
+              <input
+                placeholder="enter applicant name or reg no."
+                className="w-[30rem] rounded-md text-lg bg-red-100 py-2 h-16 px-6"
+              />
+              <img src="/vector.svg" className="h-16" />
+            </div>
+          </div>
+        ) : (
+          <div>
+            <h1 className="text-[4rem] lg:text-[5rem] font-[600] leading-[4rem] lg:leading-[5.5rem]">
+              Disclosure and <br /> Barring Service
+            </h1>
+            <p className="text-xl mt-8">
+              Request standard and enhanced personal record checks for <br />{" "}
+              eligible positions for jobs in Nigeria.
+            </p>
+            <div className="mt-6 flex gap-4 lg:gap-8 flex-col lg:flex-row">
+              <Link to="/work-experience">
+                <button className="bg-blue-800 text-white px-8 py-3 rounded-full">
+                  Background Check
+                </button>
+              </Link>
+              <Link to="/dashboard">
+                <button className="bg-red-500 text-white px-8 py-3 rounded-full">
+                  Professional Check
+                </button>
+              </Link>
+            </div>
+          </div>
+        )}
+
         <img
           src={naira}
           alt=""
           className="object-contain absolute top-[80vh] w-[12.5rem] h-[12.5rem] left-[25%]"
         />
-        {/* <img
-            src={spread}
-            alt=""
-            className="object-contain w-[50rem] mb-[70rem] ml-[60rem]  "
-          /> */}
         <img src={cap} alt="" className="absolute top-[15vh] right-[20%]" />
         <img src={dollar} alt="" className="absolute top-[40vh] right-[20%]" />
         {/* </div> */}
@@ -378,15 +133,46 @@ const HomeScreen = () => {
         </div>
       </div> */}
 
-<div className="z-10 relative mt-20 lg:max-w-[80vw] px-[1rem] mx-auto h-fit flex flex-col items-center lg:mt-12 -center">
+
+
+{
+  userSearched ? <div className="max-w-[90rem] mx-auto z-10 relative bottom-20">
+    <p className="mt-16 text-xl font-[500]">Related searches</p>
+        <div className="w-[100%] overflow-x-scroll mt-4 lg:overflow-hidden text-[13px]">
+          <div className="flex flex-col gap-7 mt-4 text-[17px] w-fit">
+            
+           {
+            [1, 2, 3, 4, 5, 6, 7, 8, 9,, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,20].map((i) => <div className="flex text-lg flex-row gap-4 " key={i}>
+              <input className="" type="checkbox" />
+              <Link to="/worker-verify" className="w-[12.5rem] lg:w-[17.5rem] text-start ">
+                Jamse Johnson
+              </Link>
+              <h1 className="w-[12.5rem] lg:w-[17.5rem] text-start">
+                UI/UX Designer
+              </h1>
+              <h1 className="w-[12.5rem] lg:w-[17.5rem] text-start">
+                04:23:43
+              </h1>
+              <h1 className="w-[12.5rem] lg:w-[17.5rem] text-start">
+                09097327432
+              </h1>
+              <h1 className="w-[12.5rem] lg:w-[17.5rem] text-start">
+                verified
+              </h1>
+            </div>)
+           }
+          </div>
+        </div>
+  </div> : <div>
+  <div className="z-10 relative mt-20 lg:max-w-[80vw] px-[1rem] mx-auto h-fit flex flex-col items-center lg:mt-12 -center">
         <h1 className="text-[3rem] font-[600]">
           About <span className="text-red-600 italic">e-verify</span>
         </h1>
 
         <p className="text-md text-center mt-6">
           We are leading provider of criminality checks with over 20,000
-          registered clients/organisations, and what's  more our team has
-          been screening for over 26 years
+          registered clients/organisations, and what's more our team has been
+          screening for over 26 years
         </p>
 
         <div className="flex flex-col lg:flex-row gap-20 justify-center mt-12 w-[100%]">
@@ -415,13 +201,13 @@ const HomeScreen = () => {
             </button>
           </div>
         </div>
-        </div>
+      </div>
 
-
-
-
-        <div className=" lg:h-[100vh] relative mt-20 lg:mt-0relative overflow-hidden px-[1rem] flex items-center justify-end lg:pr-[10vw]">
-        <img src="/svg/section.svg" className="w-[100vw] hidden lg:flex top-0 left-0 absolute" />
+      <div className=" lg:h-[100vh] relative mt-20 lg:mt-0relative overflow-hidden px-[1rem] flex items-center justify-end lg:pr-[10vw]">
+        <img
+          src="/svg/section.svg"
+          className="w-[100vw] hidden lg:flex top-0 left-0 absolute"
+        />
         <div className="relative z-10 lg:w-5/12 flex flex-col justify-end items-end">
           <h1 className="text-4xl lg:text-6xl font-[600] leading-[3rem] lg:leading-[4rem] text-end">
             Looking for the <br /> Right{" "}
@@ -506,21 +292,28 @@ const HomeScreen = () => {
         </div>
         <div className="w-[50%] absolute -right-40">
           <img src={herolady} alt="" className="w-[50rem]" />
-          
         </div>
 
         <div className="absolute bottom-0 right-0 rotate-90">
-            <img src={yellow} alt="" className="rotate-180 " />
-          </div>
+          <img src={yellow} alt="" className="rotate-180 " />
+        </div>
       </div>
 
       <div className="w-[100%] h-fit mt-20 lg:mt-0 overflow-hidden ">
-        <img src={videoImage} alt="" className="w-[100%] h-auto max-h-[40rem] object-cover" />
+        <img
+          src={videoImage}
+          alt=""
+          className="w-[100%] h-auto max-h-[40rem] object-cover"
+        />
         <div className="flex items-center justify-between gap-5 px-[1rem]  mt-16 lg:mt-8">
           <img src={hero3} alt="" className="rotate-270 hidden lg:flex" />
-          <div className=" w-fit
-      flex flex-col items-center relative justify-center">
-            <h1 className="text-3xl lg:text-5xl font-bold ">Job Posting is possible</h1>
+          <div
+            className=" w-fit
+      flex flex-col items-center relative justify-center"
+          >
+            <h1 className="text-3xl lg:text-5xl font-bold ">
+              Job Posting is possible
+            </h1>
             <Button className=" p-2 px-4 w-fit rounded-2xl bg-[#FB4F4F] text-white whitespace-nowrap mt-5">
               Search for verified personel
             </Button>
@@ -542,12 +335,10 @@ const HomeScreen = () => {
               />
             </div>
           </div>
-          <div className="hidden lg:flex"/>
+          <div className="hidden lg:flex" />
           {/* <div  className="hidden lg:flex"/> */}
         </div>
       </div>
-
-
 
       <div className="flex items-end justify-end overflow-hidden mt-12 lg:mt-12 lg:h-[45rem] relative w-[100%]">
         <div className="absolute w-[100%] left-0 bg-white text-[14px]  z-0">
@@ -555,7 +346,8 @@ const HomeScreen = () => {
         </div>
         <div className="border bg-black/60  lg:bg-white/30 border-slate-500 text-md  py-6 px-12 z-10 leading-[1rem]">
           <h1 className="text-end text-white lg:text-black text-2xl mb-2 font-bold">
-            Know more about employess <br className="hidden lg:flex"/> more than the papers
+            Know more about employess <br className="hidden lg:flex" /> more
+            than the papers
           </h1>
           <div className="text-end mt-5">
             <Button className=" px-8 py-3 rounded-xl bg-[#FB4F4F] text-white whitespace-nowrap">
@@ -566,7 +358,7 @@ const HomeScreen = () => {
       </div>
       <div className="mt-[5rem] flex items-center justify-center relative w-[100%] py-[2rem] lg:h-[40rem] overflow-hidden">
         <div className="absolute bg-white left-0 top-0 w-[100%] text-[14px] z-0">
-          <img src={hero} alt="" className="w-[100%] h-auto"/>
+          <img src={hero} alt="" className="w-[100%] h-auto" />
         </div>
         <div className=" text-center justify-center border-slate-500 rounded-xl text-md z-10 text-white leading-[2rem]">
           <div className="text-center  ">
@@ -575,7 +367,8 @@ const HomeScreen = () => {
             </h1>
             <p className="text-center leading-md text-md lg:text-xl">
               Organisations can request standard and enhanced criminal record
-              checks <br className="hidden lg:flex"/> for eligible positions in England and Wales.
+              checks <br className="hidden lg:flex" /> for eligible positions in
+              England and Wales.
             </p>
             <Button className=" px-20 py-3 rounded-xl bg-[#39399D] text-white whitespace-nowrap mt-5">
               Perform Background Check
@@ -583,6 +376,9 @@ const HomeScreen = () => {
           </div>
         </div>
       </div>
+  </div>
+}
+     
     </div>
   );
 };
