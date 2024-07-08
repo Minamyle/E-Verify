@@ -1,4 +1,4 @@
-react";
+import { useState } from "react";
 import notification from "../../public/svg/notification.svg";
 import Jobfeed from "./Jobfeed";
 import Trackajob from "./Trackajob";
