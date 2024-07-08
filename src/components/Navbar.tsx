@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 const navItems = [
     { label: "Home", href: "/" },
-    { label: "Verify", href: "/worker-verification" },
+    { label: "Verify", href: "/worker-verify" },
     { label: "About us", href: "/about-us" },
     { label: "Jobs", href: "/contact-us" },
     { label: "FAQ", href: "/faq" },

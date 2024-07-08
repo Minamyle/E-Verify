@@ -26,8 +26,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const HomeScreen = () => {
-  const [isLoggedin, setIsLoggedin] = useState(true);
-  const [userSearched, setUserSearched] = useState(true)
+  const [isLoggedin] = useState(false);
+  const [userSearched] = useState(false)
   return (
     <div className="inter ">
       <img
