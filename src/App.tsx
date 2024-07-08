@@ -41,6 +41,7 @@ import DashboardLog from "./screens/dashboard/log";
 import SearchWorker from "./screens/worker/search-worker";
 import SelectCompanyWorker from "./screens/worker/select-company-worker";
 import AfterInterview from "./screens/worker/after-interview";
+import VerifyPage from "./screens/VerifyPage";
 const App = () => {
   const routes = [
     <Route
@@ -99,10 +100,15 @@ const App = () => {
       path="/worker-verification"
       element={
         <Layout>
+          <Verification />
+        </Layout>
+      }
+    />,
+    <Route
       path="/worker-search"
       element={
         <Layout>
-          <Verification />
+          <WorkerSearch />
         </Layout>
       }
     />,
@@ -209,10 +215,17 @@ const App = () => {
     />,
     <Route
       path="/worker-search"
-      path="/worker-verify"
       element={
         <Layout>
           <WorkerSearch />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/worker-verify"
+      element={
+        <Layout>
+          <VerifyPage />
         </Layout>
       }
     />,
@@ -276,6 +289,9 @@ const App = () => {
       element={
         <Layout>
           <Verification />
+        </Layout>
+      }
+    />,
 
     <Route
       path="/search-worker"
