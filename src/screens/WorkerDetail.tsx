@@ -1,6 +1,6 @@
 import { useState } from "react";
 import RegisterationCard from "../components/RegisterationCard";
-const Address = () => {
+const WorkerDetails = () => {
   const [tab, setTab] = useState("address");
   return (
     <div className="w-[100vw] h-[100vh] inter lg:pl-[7.5%] flex flex-row items-center inter justify-center max-w-[100vw] overflow-x-hidden">
@@ -233,4 +233,4 @@ const Address = () => {
   );
 };
 
-export default Address;
+export default WorkerDetails;

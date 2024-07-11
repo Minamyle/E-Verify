@@ -8,7 +8,8 @@ import Layout from "./layout/Layout";
 import HomeScreen from "./screens/HomeScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import CompanySignUp from "./screens/CompanySignUp";
-import Address from "./screens/Address";
+import CompanyDetails from "./screens/CompanyDetail";
+import WorkerDetails from "./screens/WorkerDetail";
 import AboutUs from "./screens/AboutUs";
 import Contact from "./screens/Contact";
 import FAQ from "./screens/FAQ";
@@ -42,6 +43,8 @@ import SearchWorker from "./screens/worker/search-worker";
 import SelectCompanyWorker from "./screens/worker/select-company-worker";
 import AfterInterview from "./screens/worker/after-interview";
 import VerifyPage from "./screens/VerifyPage";
+import MoreAbout from "./screens/MoreAbout";
+import Stat from "./screens/dashboard/stat";
 const App = () => {
   const routes = [
     <Route
@@ -70,6 +73,15 @@ const App = () => {
     />,
 
     <Route
+      path="/dashboard-stat"
+      element={
+        <AdminLayout>
+          <Stat />
+        </AdminLayout>
+      }
+    />,
+
+    <Route
       path="/dashboard-log"
       element={
         <AdminLayout>
@@ -79,7 +91,8 @@ const App = () => {
     />,
     <Route path="/register" element={<RegisterScreen />} />,
     <Route path="/register/company" element={<CompanySignUp />} />,
-    <Route path="/address" element={<Address />} />,
+    <Route path="/worker-detail" element={<WorkerDetails />} />,
+    <Route path="/Company-detail" element={<CompanyDetails />} />,
     <Route
       path="/worker-verification"
       element={
@@ -96,14 +109,7 @@ const App = () => {
         </Layout>
       }
     />,
-    <Route
-      path="/worker-verification"
-      element={
-        <Layout>
-          <Verification />
-        </Layout>
-      }
-    />,
+
     <Route
       path="/worker-search"
       element={
@@ -281,6 +287,15 @@ const App = () => {
       element={
         <Layout>
           <CompanyInfo />
+        </Layout>
+      }
+    />,
+
+    <Route
+      path="/more-aboutus"
+      element={
+        <Layout>
+          <MoreAbout />
         </Layout>
       }
     />,

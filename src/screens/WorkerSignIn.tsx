@@ -4,7 +4,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { FaTwitter } from "react-icons/fa";
 import { RiGoogleLine } from "react-icons/ri";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 const WorkerSignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -83,9 +83,9 @@ const WorkerSignIn = () => {
 
             <h1 className="mt-6">
               Do not have an account?{" "}
-              <a href="/register/worker" className="text-blue-400">
+              <Link to="/worker-detail" className="text-blue-400">
                 Sign Up
-              </a>
+              </Link>
             </h1>
           </div>
         </div>

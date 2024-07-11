@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 const navItems = [
     { label: "Home", href: "/" },
-    { label: "Verify", href: "/worker-verify" },
+    { label: "Verify", href: "/worker-verification" },
     { label: "About us", href: "/about-us" },
     { label: "Jobs", href: "/contact-us" },
     { label: "FAQ", href: "/faq" },
@@ -38,7 +38,7 @@ const Navbar = () => {
               Sign In
             </Link>
             <Link
-              to="/WorkerSignUp"
+              to="/register"
               className="bg-red-500 text-white py-2 px-3 rounded-md"
             >
               Create an account

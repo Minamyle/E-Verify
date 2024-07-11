@@ -2,6 +2,7 @@ import RegisterationCard from "../components/RegisterationCard";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaTwitter } from "react-icons/fa";
 import { RiGoogleLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const CompanySignUp = () => {
   return (
     <div className="w-[100vw] h-[100vh] px-[1rem] lg:px-0 lg:pl-[7.5%] flex flex-row items-center inter justify-center max-w-[100vw] overflow-x-hidden">
@@ -74,9 +75,9 @@ const CompanySignUp = () => {
                   placeholder=""
                 />
               </div>
-            <button className="max-w-[30rem] border bg-red-400 text-white py-2 mt-6 rounded-xl">
+            <Link to="/company-detail" className="max-w-[30rem] text-center border bg-red-400 text-white py-2 mt-6 rounded-xl">
               Sign up
-            </button>
+            </Link>
           </div>
 
           <div className="mt-16 max-w-[27.5rem] w-[100%] flex flex-col justify-center items-center">
@@ -90,7 +91,7 @@ const CompanySignUp = () => {
 
             <h1 className="mt-6">
               Already have an account?{" "}
-              <span className="text-blue-400">Sign in</span>
+              <Link to="/company-detail" className="text-blue-400">Sign in</Link>
             </h1>
           </div>
         </div>

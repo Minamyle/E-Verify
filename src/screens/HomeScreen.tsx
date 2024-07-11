@@ -166,7 +166,7 @@ const HomeScreen = () => {
                 <div className="flex text-lg flex-row gap-4 " key={i}>
                   <input className="" type="checkbox" />
                   <Link
-                    to="/worker-verify"
+                    to="/companyinfo"
                     className="w-[12.5rem] lg:w-[17.5rem] text-start "
                   >
                     Jamse Johnson

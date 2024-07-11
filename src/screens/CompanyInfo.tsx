@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const CompanyInfo = () => {
   return (
     <div className="px-[1rem] lg:px-[5%] pb-32 inter pt-12 lg:pt-24">
@@ -55,7 +56,7 @@ const CompanyInfo = () => {
         </div>
 
         <div className="w-3/12">
-          <button>Dashboard</button>
+          <Link to="/dashboard">Dashboard</Link>
         </div>
       </div>
 
@@ -128,7 +129,7 @@ const CompanyInfo = () => {
         </div>
       </div>
 
-      <div className="mt-20 overflow-x-scroll w-[100%] max-w-[80rem]">
+      <div className="mt-20 overflow-x-scroll lg:overflow-x-hidden w-[100%] max-w-[80rem]">
         <h1>Approved Workers</h1>
 
         <div className="flex w-fit flex-row gap-4 text-[12px] mt-4">
@@ -142,28 +143,28 @@ const CompanyInfo = () => {
         <div className="flex flex-row gap-4 mt-4">
           <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4">
-              <h1 className="w-[15rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[15rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[15rem] text-center">Receptionist</h1>
               <h1 className="w-[15rem] text-center">08062634232</h1>
               <h1 className="w-[15rem] text-center">4th Jan 1012</h1>
               <h1 className="w-[15rem] text-center">3rd may 2992</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[15rem] text-center ">Jamse Johnson</h1>
+            <Link to="/add-experience" className="w-[15rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[15rem] text-center">Receptionist</h1>
               <h1 className="w-[15rem] text-center">08062634232</h1>
               <h1 className="w-[15rem] text-center">4th Jan 1012</h1>
               <h1 className="w-[15rem] text-center">3rd may 2992</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[15rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[15rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[15rem] text-center">Receptionist</h1>
               <h1 className="w-[15rem] text-center">08062634232</h1>
               <h1 className="w-[15rem] text-center">4th Jan 1012</h1>
               <h1 className="w-[15rem] text-center">3rd may 2992</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[15rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[15rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[15rem] text-center">Receptionist</h1>
               <h1 className="w-[15rem] text-center">08062634232</h1>
               <h1 className="w-[15rem] text-center">4th Jan 1012</h1>
@@ -173,7 +174,7 @@ const CompanyInfo = () => {
         </div>
       </div>
 
-      <div className="mt-20 w-[100%] overflow-x-scroll">
+      <div className="mt-20 w-[100%] overflow-x-scroll lg:overflow-x-hidden">
         <h1>History log</h1>
 
         <div className="flex w-fit flex-row gap-4 text-[12px] mt-4">
@@ -190,28 +191,28 @@ const CompanyInfo = () => {
           </button>
           <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4">
-              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[17.5rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
               <h1 className="w-[17.5rem] text-center">04:23:43</h1>
               <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
               <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[17.5rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
               <h1 className="w-[17.5rem] text-center">04:23:43</h1>
               <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
               <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[17.5rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
               <h1 className="w-[17.5rem] text-center">04:23:43</h1>
               <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
               <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[17.5rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
               <h1 className="w-[17.5rem] text-center">04:23:43</h1>
               <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
@@ -224,28 +225,28 @@ const CompanyInfo = () => {
           </button>
           <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4">
-              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[17.5rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
               <h1 className="w-[17.5rem] text-center">04:23:43</h1>
               <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
               <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[17.5rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
               <h1 className="w-[17.5rem] text-center">04:23:43</h1>
               <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
               <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[17.5rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
               <h1 className="w-[17.5rem] text-center">04:23:43</h1>
               <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
               <h1 className="w-[17.5rem] text-center">Accepted</h1>
             </div>
             <div className="flex flex-row gap-4">
-              <h1 className="w-[17.5rem] text-center ">Jamse Johnson</h1>
+              <Link to="/add-experience" className="w-[17.5rem] text-center ">Jamse Johnson</Link>
               <h1 className="w-[17.5rem] text-center">Mary Jane</h1>
               <h1 className="w-[17.5rem] text-center">04:23:43</h1>
               <h1 className="w-[17.5rem] text-center">03-may-2024</h1>
