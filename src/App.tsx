@@ -45,6 +45,9 @@ import AfterInterview from "./screens/worker/after-interview";
 import VerifyPage from "./screens/VerifyPage";
 import MoreAbout from "./screens/MoreAbout";
 import Stat from "./screens/dashboard/stat";
+import WorkerHomeScreen from "./screens/WorkerHome";
+import JobApplicant from "./screens/JobApplicant";
+import Jobs from "./screens/Job";
 const App = () => {
   const routes = [
     <Route
@@ -55,6 +58,9 @@ const App = () => {
         </Layout>
       }
     />,
+    <Route path="/worker-home" element={<Layout>
+      <WorkerHomeScreen />
+    </Layout>} />,
     <Route
       path="/dashboard"
       element={
@@ -177,6 +183,15 @@ const App = () => {
     />,
 
     <Route
+      path="/jobs"
+      element={
+        <Layout>
+          <Jobs />
+        </Layout>
+      }
+    />,
+
+    <Route
       path="/add-experience-autofill"
       element={
         <Layout>
@@ -198,6 +213,14 @@ const App = () => {
       element={
         <Layout>
           <AddEducation />
+        </Layout>
+      }
+    />,
+    <Route
+      path="/job-applicants"
+      element={
+        <Layout>
+          <JobApplicant />
         </Layout>
       }
     />,
@@ -235,7 +258,9 @@ const App = () => {
         </Layout>
       }
     />,
-    <Route path="/about-us" element={<AboutUs />} />,
+    <Route path="/about-us" element={<Layout>
+      <AboutUs />
+    </Layout>} />,
     <Route path="/contact" element={<Contact />} />,
     <Route path="/faq" element={<FAQ />} />,
 
@@ -263,14 +288,14 @@ const App = () => {
         </Layout>
       }
     />,
-    <Route
-      path="/verification"
-      element={
-        <Layout>
-          <Verification />
-        </Layout>
-      }
-    />,
+    // <Route
+    //   path="/verification"
+    //   element={
+    //     <Layout>
+    //       <Verification />
+    //     </Layout>
+    //   }
+    // />,
     <Route
       path="/work-experience"
       element={
@@ -299,14 +324,14 @@ const App = () => {
         </Layout>
       }
     />,
-    <Route
-      path="/verification"
-      element={
-        <Layout>
-          <Verification />
-        </Layout>
-      }
-    />,
+    // <Route
+    //   path="/verification"
+    //   element={
+    //     <Layout>
+    //       <Verification />
+    //     </Layout>
+    //   }
+    // />,
 
     <Route
       path="/search-worker"

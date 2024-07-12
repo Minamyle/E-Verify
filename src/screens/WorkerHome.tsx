@@ -25,7 +25,7 @@ import red1 from "../../public/svg/red2.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const HomeScreen = () => {
+const WorkerHomeScreen = () => {
   const [isLoggedin] = useState(false);
   const [userSearched] = useState(false);
   return (
@@ -409,4 +409,4 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default WorkerHomeScreen;
